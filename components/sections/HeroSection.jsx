@@ -8,14 +8,14 @@ export default function HeroSection() {
 
   return (
     <header className="hero-shell relative w-full h-screen flex flex-col justify-center items-center overflow-hidden px-4">
-      <div className="absolute inset-0 z-0 flex items-center justify-center opacity-40">
+      <div className="absolute inset-0 z-0 flex items-center justify-center opacity-55">
         <img
           src={siteMeta.heroImage}
           alt="Taxi du Môle en Haute-Savoie"
           className="hero-image object-contain"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/55 to-black/75 z-0" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/28 via-black/34 to-black/58 z-0" />
       <div className="hero-glow" />
 
       <div className="z-10 text-center flex flex-col items-center max-w-6xl">
@@ -80,9 +80,9 @@ export default function HeroSection() {
         }
 
         .hero-image {
-          width: min(78vw, 86rem);
-          max-height: 66vh;
-          filter: saturate(0.9) contrast(1.02);
+          width: min(68vw, 76rem);
+          max-height: 58vh;
+          filter: brightness(1.2) saturate(1.02) contrast(1.04);
           transform: translateY(6%);
         }
 
@@ -122,11 +122,11 @@ export default function HeroSection() {
           }
 
           .hero-image {
-            width: 92vw;
-            max-height: 46vh;
-            transform: translateY(10%);
+            width: 78vw;
+            max-height: 36vh;
+            transform: translateY(9%);
             transform-origin: center center;
-            opacity: 0.7;
+            opacity: 0.82;
           }
 
           .hero-glow {
@@ -181,9 +181,9 @@ export default function HeroSection() {
 
         @media (max-width: 420px) {
           .hero-image {
-            width: 94vw;
-            max-height: 42vh;
-            transform: translateY(11%);
+            width: 80vw;
+            max-height: 34vh;
+            transform: translateY(10%);
           }
 
           .hero-brand-title {
