@@ -1,0 +1,10 @@
+{
+  "name": "Taxi du Môle",
+  "short_name": "Taxi du Môle",
+  "description": "Taxi a Bonneville pour trajets locaux, aeroports, gares et stations en Haute-Savoie.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "lang": "fr"
+}
