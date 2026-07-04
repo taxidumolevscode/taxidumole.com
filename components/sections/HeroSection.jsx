@@ -80,10 +80,10 @@ export default function HeroSection() {
         }
 
         .hero-image {
-          width: min(88vw, 96rem);
-          max-height: 74vh;
+          width: min(78vw, 86rem);
+          max-height: 66vh;
           filter: saturate(0.9) contrast(1.02);
-          transform: translateY(4%);
+          transform: translateY(6%);
         }
 
         .hero-glow {
@@ -122,10 +122,10 @@ export default function HeroSection() {
           }
 
           .hero-image {
-            width: 112vw;
-            max-height: 58vh;
-            transform: translateY(12%);
-            transform-origin: center 62%;
+            width: 92vw;
+            max-height: 46vh;
+            transform: translateY(10%);
+            transform-origin: center center;
             opacity: 0.7;
           }
 
@@ -181,9 +181,9 @@ export default function HeroSection() {
 
         @media (max-width: 420px) {
           .hero-image {
-            width: 118vw;
-            max-height: 54vh;
-            transform: translateY(13%);
+            width: 94vw;
+            max-height: 42vh;
+            transform: translateY(11%);
           }
 
           .hero-brand-title {
