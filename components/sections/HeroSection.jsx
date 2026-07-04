@@ -8,11 +8,11 @@ export default function HeroSection() {
 
   return (
     <header className="hero-shell relative w-full h-screen flex flex-col justify-center items-center overflow-hidden px-4">
-      <div className="absolute inset-0 z-0 opacity-40">
+      <div className="absolute inset-0 z-0 flex items-center justify-center opacity-40">
         <img
           src={siteMeta.heroImage}
           alt="Taxi du Môle en Haute-Savoie"
-          className="hero-image w-full h-full object-cover"
+          className="hero-image object-contain"
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/55 to-black/75 z-0" />
@@ -80,8 +80,10 @@ export default function HeroSection() {
         }
 
         .hero-image {
+          width: min(88vw, 96rem);
+          max-height: 74vh;
           filter: saturate(0.9) contrast(1.02);
-          transform: scale(1.02);
+          transform: translateY(4%);
         }
 
         .hero-glow {
@@ -120,7 +122,9 @@ export default function HeroSection() {
           }
 
           .hero-image {
-            transform: scale(0.76) translateY(9%);
+            width: 112vw;
+            max-height: 58vh;
+            transform: translateY(12%);
             transform-origin: center 62%;
             opacity: 0.7;
           }
@@ -177,7 +181,9 @@ export default function HeroSection() {
 
         @media (max-width: 420px) {
           .hero-image {
-            transform: scale(0.7) translateY(11%);
+            width: 118vw;
+            max-height: 54vh;
+            transform: translateY(13%);
           }
 
           .hero-brand-title {
