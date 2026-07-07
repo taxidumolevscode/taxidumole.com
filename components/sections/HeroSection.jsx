@@ -146,9 +146,9 @@ export default function HeroSection() {
           margin: 0 auto;
           max-width: min(76rem, 92vw);
           color: #fff8ea;
-          font-size: 2.05rem;
-          line-height: 1.08;
-          font-weight: 900;
+          font-size: 1.85rem;
+          line-height: 1.12;
+          font-weight: 800;
           letter-spacing: 0;
           text-transform: uppercase;
           text-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.7);
@@ -198,9 +198,9 @@ export default function HeroSection() {
           }
 
           .hero-brand-title {
-            font-size: 1.8rem;
-            line-height: 1.12;
-            max-width: 22rem;
+            font-size: 1.42rem;
+            line-height: 1.16;
+            max-width: 23rem;
           }
 
           .hero-mascot-wrap {
@@ -211,25 +211,25 @@ export default function HeroSection() {
 
         @media (min-width: 480px) {
           .hero-brand-title {
-            font-size: 2.25rem;
+            font-size: 1.9rem;
           }
         }
 
         @media (min-width: 768px) {
           .hero-brand-title {
-            font-size: 3.5rem;
+            font-size: 3rem;
           }
         }
 
         @media (min-width: 1024px) {
           .hero-brand-title {
-            font-size: 4.4rem;
+            font-size: 3.85rem;
           }
         }
 
         @media (min-width: 1536px) {
           .hero-brand-title {
-            font-size: 5.25rem;
+            font-size: 4.6rem;
           }
         }
 
@@ -243,7 +243,7 @@ export default function HeroSection() {
           }
 
           .hero-brand-title {
-            font-size: 1.55rem;
+            font-size: 1.28rem;
           }
         }
       `}</style>
