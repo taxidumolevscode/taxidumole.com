@@ -1,13 +1,19 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowDownRight, Phone, X } from "lucide-react";
 import { navigationMenu, siteMeta } from "../siteData";
 
 export default function MenuOverlay({ isOpen, onClose }) {
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [expandedItem, setExpandedItem] = useState(null);
 
   const menuItems = useMemo(() => navigationMenu.items, []);
+
+  useEffect(() => {
+    if (!isOpen) {
+      setExpandedItem(null);
+    }
+  }, [isOpen]);
 
   return (
     <AnimatePresence>
@@ -61,65 +67,76 @@ export default function MenuOverlay({ isOpen, onClose }) {
                 transition={{ duration: 0.5, delay: 0.18 }}
                 className="relative"
               >
-                <button
-                  onClick={() => setIsExpanded((value) => !value)}
-                  className="sr-only"
-                  aria-expanded={isExpanded}
-                >
-                  {navigationMenu.label}
-                </button>
+                <div className="divide-y divide-white/45 border-y border-white/45">
+                  {menuItems.map((item, index) => {
+                    const hasChildren = Boolean(item.children?.length);
+                    const isItemExpanded = expandedItem === item.href;
 
-                <AnimatePresence initial={false}>
-                  {isExpanded && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.35, ease: "easeOut" }}
-                    >
-                      <div>
-                        <div className="divide-y divide-white/45 border-y border-white/45">
-                          {menuItems.map((item, index) => (
+                    return (
+                      <motion.div
+                        key={item.href}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.35, delay: 0.05 + index * 0.03 }}
+                        className="py-7 md:py-9"
+                      >
+                        {hasChildren ? (
+                          <button
+                            type="button"
+                            onClick={() => setExpandedItem(isItemExpanded ? null : item.href)}
+                            aria-expanded={isItemExpanded}
+                            className="group flex w-full items-center justify-between gap-6 text-left"
+                          >
+                            <span className="text-4xl font-black uppercase tracking-normal text-[#fff8ea] transition-colors group-hover:text-[#f4bd35] md:text-6xl">
+                              {item.label}
+                            </span>
+                            <span className={`flex h-12 w-12 shrink-0 items-center justify-center text-[#f4bd35] transition-transform md:h-16 md:w-16 ${isItemExpanded ? "rotate-45" : "group-hover:translate-x-2 group-hover:translate-y-2"}`}>
+                              <ArrowDownRight size={44} strokeWidth={1.8} />
+                            </span>
+                          </button>
+                        ) : (
+                          <Link
+                            href={item.href}
+                            onClick={onClose}
+                            className="group flex items-center justify-between gap-6 text-left"
+                          >
+                            <span className="text-4xl font-black uppercase tracking-normal text-[#fff8ea] transition-colors group-hover:text-[#f4bd35] md:text-6xl">
+                              {item.label}
+                            </span>
+                            <span className="flex h-12 w-12 shrink-0 items-center justify-center text-[#f4bd35] transition-transform group-hover:translate-x-2 group-hover:translate-y-2 md:h-16 md:w-16">
+                              <ArrowDownRight size={44} strokeWidth={1.8} />
+                            </span>
+                          </Link>
+                        )}
+
+                        <AnimatePresence initial={false}>
+                          {hasChildren && isItemExpanded ? (
                             <motion.div
-                              key={item.href}
-                              initial={{ opacity: 0, y: 20 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              transition={{ duration: 0.35, delay: 0.05 + index * 0.03 }}
-                              className="py-7 md:py-9"
+                              initial={{ height: 0, opacity: 0 }}
+                              animate={{ height: "auto", opacity: 1 }}
+                              exit={{ height: 0, opacity: 0 }}
+                              transition={{ duration: 0.28, ease: "easeOut" }}
+                              className="overflow-hidden"
                             >
-                              <Link
-                                href={item.href}
-                                onClick={onClose}
-                                className="group flex items-center justify-between gap-6 text-left"
-                              >
-                                <span className="text-4xl font-black uppercase tracking-normal text-[#fff8ea] transition-colors group-hover:text-[#f4bd35] md:text-6xl">
-                                  {item.label}
-                                </span>
-                                <span className="flex h-12 w-12 shrink-0 items-center justify-center text-[#f4bd35] transition-transform group-hover:translate-x-2 group-hover:translate-y-2 md:h-16 md:w-16">
-                                  <ArrowDownRight size={44} strokeWidth={1.8} />
-                                </span>
-                              </Link>
-                              {item.children ? (
-                                <div className="mt-5 grid gap-2 pl-3 text-base md:mt-6 md:pl-8 md:text-2xl">
-                                  {item.children.map((child) => (
-                                    <Link
-                                      key={typeof child === "string" ? child : child.href}
-                                      href={typeof child === "string" ? item.href : child.href}
-                                      onClick={onClose}
-                                      className="w-fit font-black uppercase tracking-normal text-[#fff8ea] transition-colors hover:text-[#f4bd35]"
-                                    >
-                                      &gt; {typeof child === "string" ? child : child.label}
-                                    </Link>
-                                  ))}
-                                </div>
-                              ) : null}
+                              <div className="mt-5 grid gap-3 pl-3 text-base md:mt-6 md:pl-8 md:text-2xl">
+                                {item.children.map((child) => (
+                                  <Link
+                                    key={typeof child === "string" ? child : child.href}
+                                    href={typeof child === "string" ? item.href : child.href}
+                                    onClick={onClose}
+                                    className="w-fit font-black uppercase tracking-normal text-[#fff8ea] transition-colors hover:text-[#f4bd35]"
+                                  >
+                                    &gt; {typeof child === "string" ? child : child.label}
+                                  </Link>
+                                ))}
+                              </div>
                             </motion.div>
-                          ))}
-                        </div>
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                          ) : null}
+                        </AnimatePresence>
+                      </motion.div>
+                    );
+                  })}
+                </div>
               </motion.div>
 
               <motion.div
