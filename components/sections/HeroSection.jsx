@@ -58,7 +58,7 @@ export default function HeroSection() {
 
         <div className="hero-car-stage" aria-hidden="true">
           <img
-            src="/images/audi-a6-side-home.png"
+            src="/images/audi-a6-dark-home.png"
             alt=""
             className="hero-car"
           />
