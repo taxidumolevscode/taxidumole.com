@@ -9,7 +9,7 @@ export default function PointsFortsPage() {
     <>
       <SeoHead
         title="Points Forts"
-        description="Les points forts Taxi du Môle: réservation simple, ponctualité, zones desservies, transferts et SEO local Haute-Savoie."
+        description="Les points forts Taxi du Môle: réservation simple, ponctualité, zones desservies et transferts en Haute-Savoie."
       />
       <SiteLayout>
         <PageHero

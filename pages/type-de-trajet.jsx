@@ -10,41 +10,26 @@ const tripTypes = [
     id: "aeroport-geneve-gares",
     title: "Aéroport Genève & Gares",
     text: "Transfert depuis Bonneville, la vallée de l'Arve ou les stations vers Genève aéroport, Genève Cornavin, Annemasse, Cluses, Annecy et Bellegarde.",
-    geo: "Bonneville, Genève, Annemasse, Cluses, Annecy",
-    seo: "taxi aéroport Genève Haute-Savoie, taxi gare Cluses, transfert Genève Bonneville",
-    answer: "Taxi du Môle organise les départs et arrivées avec heure de prise en charge, numéro de vol ou de train et bagages confirmés avant le trajet.",
   },
   {
     id: "hotel-loisirs",
     title: "Hôtel & Loisirs",
     text: "Prise en charge devant hôtel, restaurant, événement, lieu touristique ou hébergement de vacances pour un trajet fluide sans recherche de stationnement.",
-    geo: "Bonneville, La Roche-sur-Foron, Annecy, Genève, Chamonix",
-    seo: "taxi hôtel Haute-Savoie, chauffeur loisirs Genève, taxi restaurant Bonneville",
-    answer: "Le service convient aux séjours, sorties, retours tardifs, visites et déplacements touristiques autour du Môle et de la Haute-Savoie.",
   },
   {
     id: "long-trajet",
     title: "Long Trajet",
     text: "Trajets régionaux et longue distance sur réservation avec estimation avant départ, confort et pause possible selon le parcours.",
-    geo: "Haute-Savoie, Savoie, Genève, Lyon, Grenoble",
-    seo: "taxi longue distance Haute-Savoie, taxi Lyon Bonneville, taxi Genève Chamonix",
-    answer: "Pour un trajet non listé, envoyez départ, arrivée, date, heure et nombre de passagers afin de recevoir une proposition claire.",
   },
   {
     id: "stations-de-ski",
     title: "Stations De Ski",
     text: "Transferts hiver vers stations, chalets, résidences et départs de remontées avec bagages, skis et horaires anticipés.",
-    geo: "Chamonix, Flaine, Samoëns, Megève, La Clusaz, Le Grand-Bornand",
-    seo: "taxi station ski Haute-Savoie, transfert ski Genève Chamonix, taxi Flaine Bonneville",
-    answer: "Les skis, snowboards et bagages sont à signaler lors de la réservation pour choisir l'organisation adaptée.",
   },
   {
     id: "prive-entreprises-scolaire",
     title: "Privé / Entreprises / Scolaire",
     text: "Courses ponctuelles ou régulières pour particuliers, professionnels, collaborateurs, rendez-vous et besoins organisés à l'avance.",
-    geo: "Bonneville, vallée de l'Arve, Haute-Savoie",
-    seo: "taxi entreprise Haute-Savoie, transport privé Bonneville, taxi scolaire ponctuel",
-    answer: "Les trajets récurrents peuvent être planifiés avec horaires fixes, points de prise en charge et contact référent.",
   },
 ];
 
@@ -81,20 +66,6 @@ export default function TypeDeTrajetPage() {
                   </div>
                   <div className="space-y-5">
                     <p className="text-lg text-neutral-700 leading-relaxed">{trip.text}</p>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                      <div className="bg-white p-5 rounded-[1rem]">
-                        <h3 className="text-xs uppercase tracking-[0.24em] text-neutral-400 mb-2">Geo</h3>
-                        <p className="text-sm font-semibold">{trip.geo}</p>
-                      </div>
-                      <div className="bg-white p-5 rounded-[1rem]">
-                        <h3 className="text-xs uppercase tracking-[0.24em] text-neutral-400 mb-2">SEO</h3>
-                        <p className="text-sm font-semibold">{trip.seo}</p>
-                      </div>
-                      <div className="bg-white p-5 rounded-[1rem]">
-                        <h3 className="text-xs uppercase tracking-[0.24em] text-neutral-400 mb-2">SAIO</h3>
-                        <p className="text-sm font-semibold">{trip.answer}</p>
-                      </div>
-                    </div>
                   </div>
                 </article>
               </FadeIn>

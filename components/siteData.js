@@ -1,7 +1,7 @@
 export const siteMeta = {
   brand: "Taxi du Môle",
   siteName: "Taxi du Môle - Taxi Bonneville Haute-Savoie",
-  siteUrl: "https://taxidumole.com",
+  siteUrl: "https://www.taxidumole.com",
   phoneDisplay: "06 80 42 30 31",
   phoneHref: "tel:+33680423031",
   email: "contact@taxidumole.com",
@@ -267,7 +267,7 @@ export const pointsFortsContent = {
     },
     {
       number: "04",
-      title: "SEO Local Prêt",
+      title: "Visibilité Locale Claire",
       text: "Pages dédiées, sitemap, robots.txt, données structurées et contenu local pour Google.",
     },
   ],
@@ -343,18 +343,18 @@ export const preuvesContent = {
   eyebrow: "Confiance",
   title: "Des signaux concrets pour transformer une visite en réservation.",
   intro:
-    "Le site est structuré pour inspirer confiance: informations visibles, pages SEO, contact direct et parcours clair.",
+    "Le site est structuré pour inspirer confiance: informations visibles, pages locales, contact direct et parcours clair.",
   stats: [
     { value: "24/7", label: "Demandes Sur Réservation" },
     { value: "74", label: "Haute-Savoie" },
     { value: "3", label: "Aéroports Cibles" },
-    { value: "8", label: "Pages SEO" },
+    { value: "8", label: "Pages Locales" },
   ],
   sources: ["Sitemap XML", "Robots.txt", "JSON-LD TaxiService"],
   notes: [
     "Le sitemap référence les pages importantes du site.",
     "Le robots.txt autorise l'exploration et pointe vers le sitemap.",
-    "Les titres et descriptions sont adaptés au SEO local taxi Haute-Savoie.",
+    "Les titres et descriptions sont adaptés aux recherches locales taxi Haute-Savoie.",
   ],
 };
 
@@ -387,7 +387,7 @@ export const faqContent = [
   {
     question: "Le site est-il prêt pour Google Search Console ?",
     answer:
-      "Oui, il contient un sitemap, un robots.txt, des pages SEO locales et des données structurées TaxiService.",
+      "Oui, il contient un sitemap, un robots.txt, des pages locales et des données structurées TaxiService.",
   },
   {
     question: "Quel est le meilleur moyen pour une demande urgente ?",

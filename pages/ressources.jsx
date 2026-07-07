@@ -10,7 +10,7 @@ export default function RessourcesPage() {
     <>
       <SeoHead
         title="Ressources"
-        description="Ressources Taxi du Môle: services, zones desservies, transferts aéroports, contact, sitemap et SEO local."
+        description="Ressources Taxi du Môle: services, zones desservies, transferts aéroports, contact et sitemap."
       />
       <SiteLayout>
         <PageHero

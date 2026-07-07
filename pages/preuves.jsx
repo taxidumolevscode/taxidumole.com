@@ -9,7 +9,7 @@ export default function PreuvesPage() {
     <>
       <SeoHead
         title="Preuves"
-        description="Repères de confiance Taxi du Môle: sitemap, robots.txt, données structurées, zones locales et signaux SEO."
+        description="Repères de confiance Taxi du Môle: sitemap, robots.txt, données structurées, zones locales et informations utiles."
       />
       <SiteLayout>
         <PageHero
