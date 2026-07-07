@@ -37,7 +37,8 @@ export const navigationMenu = {
 export const homeContent = {
   hero: {
     eyebrow: "Taxi Privé En Haute-Savoie",
-    brandTitle: "Taxi du Môle",
+    brandTitle: "Services de transport de personnes en Haute-Savoie",
+    brandTitleHref: "https://www.pagesjaunes.fr/annuaire/departement/haute-savoie-74/transport-personnes",
     intro:
       "Taxi à Bonneville pour trajets locaux, transferts aéroports, gares, stations de ski et transport sur réservation en Haute-Savoie.",
     bullets: ["Bonneville", "Aéroport Genève", "Réservation 24h/24"],

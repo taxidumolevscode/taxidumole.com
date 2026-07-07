@@ -21,7 +21,16 @@ export default function HeroSection() {
         </div>
 
         <FadeIn delay={0.28} className="w-full">
-          <h1 className="hero-brand-title">{hero.brandTitle}</h1>
+          <h1 className="hero-brand-title">
+            <a
+              href={hero.brandTitleHref}
+              target="_blank"
+              rel="noreferrer"
+              className="transition-colors hover:text-[#f4bd35]"
+            >
+              {hero.brandTitle}
+            </a>
+          </h1>
         </FadeIn>
 
         <FadeIn delay={0.32} className="hero-mascot-wrap">
@@ -135,14 +144,13 @@ export default function HeroSection() {
 
         .hero-brand-title {
           margin: 0 auto;
-          max-width: 100%;
+          max-width: min(76rem, 92vw);
           color: #fff8ea;
-          font-size: 2.55rem;
-          line-height: 0.95;
+          font-size: 2.05rem;
+          line-height: 1.08;
           font-weight: 900;
           letter-spacing: 0;
           text-transform: uppercase;
-          white-space: nowrap;
           text-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.7);
         }
 
@@ -190,7 +198,9 @@ export default function HeroSection() {
           }
 
           .hero-brand-title {
-            font-size: 2.35rem;
+            font-size: 1.8rem;
+            line-height: 1.12;
+            max-width: 22rem;
           }
 
           .hero-mascot-wrap {
@@ -201,25 +211,25 @@ export default function HeroSection() {
 
         @media (min-width: 480px) {
           .hero-brand-title {
-            font-size: 3rem;
+            font-size: 2.25rem;
           }
         }
 
         @media (min-width: 768px) {
           .hero-brand-title {
-            font-size: 5.6rem;
+            font-size: 3.5rem;
           }
         }
 
         @media (min-width: 1024px) {
           .hero-brand-title {
-            font-size: 6.7rem;
+            font-size: 4.4rem;
           }
         }
 
         @media (min-width: 1536px) {
           .hero-brand-title {
-            font-size: 7.35rem;
+            font-size: 5.25rem;
           }
         }
 
@@ -233,7 +243,7 @@ export default function HeroSection() {
           }
 
           .hero-brand-title {
-            font-size: 2.1rem;
+            font-size: 1.55rem;
           }
         }
       `}</style>
