@@ -8,15 +8,15 @@ export default function HeroSection() {
 
   return (
     <header className="hero-shell relative w-full h-screen flex flex-col justify-center items-center overflow-hidden px-4">
-      <div className="absolute inset-0 z-0 flex items-center justify-center opacity-55">
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-neutral-950 to-black z-0" />
+      <div className="hero-glow" />
+      <div className="hero-car-stage" aria-hidden="true">
         <img
-          src={siteMeta.heroImage}
-          alt="Taxi du Môle en Haute-Savoie"
-          className="hero-image object-contain"
+          src="/images/audi-a6-side-home.png"
+          alt=""
+          className="hero-car"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-black/28 via-black/34 to-black/58 z-0" />
-      <div className="hero-glow" />
 
       <div className="z-10 text-center flex flex-col items-center max-w-6xl">
         <div className="w-full text-left px-3 xl:px-6">
@@ -79,11 +79,22 @@ export default function HeroSection() {
           min-height: 100svh;
         }
 
-        .hero-image {
-          width: min(68vw, 76rem);
-          max-height: 58vh;
-          filter: brightness(1.2) saturate(1.02) contrast(1.04);
-          transform: translateY(6%);
+        .hero-car-stage {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 8vh;
+          z-index: 1;
+          display: flex;
+          justify-content: center;
+          pointer-events: none;
+        }
+
+        .hero-car {
+          width: min(58vw, 58rem);
+          height: auto;
+          opacity: 0.72;
+          filter: brightness(1.12) saturate(1.02) contrast(1.04);
         }
 
         .hero-glow {
@@ -121,12 +132,13 @@ export default function HeroSection() {
             padding-bottom: 2.5rem;
           }
 
-          .hero-image {
-            width: 78vw;
-            max-height: 36vh;
-            transform: translateY(9%);
-            transform-origin: center center;
-            opacity: 0.82;
+          .hero-car-stage {
+            bottom: clamp(4.5rem, 9svh, 6rem);
+          }
+
+          .hero-car {
+            width: 86vw;
+            opacity: 0.9;
           }
 
           .hero-glow {
@@ -180,10 +192,12 @@ export default function HeroSection() {
         }
 
         @media (max-width: 420px) {
-          .hero-image {
-            width: 80vw;
-            max-height: 34vh;
-            transform: translateY(10%);
+          .hero-car-stage {
+            bottom: 4.5rem;
+          }
+
+          .hero-car {
+            width: 88vw;
           }
 
           .hero-brand-title {
