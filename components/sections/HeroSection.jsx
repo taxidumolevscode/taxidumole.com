@@ -10,13 +10,6 @@ export default function HeroSection() {
     <header className="hero-shell relative w-full h-screen flex flex-col justify-center items-center overflow-hidden px-4">
       <div className="absolute inset-0 bg-gradient-to-b from-black via-neutral-950 to-black z-0" />
       <div className="hero-glow" />
-      <div className="hero-car-stage" aria-hidden="true">
-        <img
-          src="/images/audi-a6-side-home.png"
-          alt=""
-          className="hero-car"
-        />
-      </div>
 
       <div className="hero-content z-10 text-center flex flex-col items-center max-w-6xl">
         <div className="w-full text-left px-3 xl:px-6">
@@ -62,6 +55,14 @@ export default function HeroSection() {
             </span>
           ))}
         </FadeIn>
+
+        <div className="hero-car-stage" aria-hidden="true">
+          <img
+            src="/images/audi-a6-side-home.png"
+            alt=""
+            className="hero-car"
+          />
+        </div>
       </div>
 
       <motion.div
@@ -78,22 +79,18 @@ export default function HeroSection() {
         .hero-shell {
           min-height: 100svh;
           justify-content: flex-start;
-          padding-top: clamp(8rem, 17vh, 13rem);
+          padding-top: clamp(7rem, 13vh, 10rem);
         }
 
         .hero-car-stage {
-          position: absolute;
-          left: 0;
-          right: 0;
-          bottom: clamp(3.5rem, 7vh, 5rem);
-          z-index: 1;
+          margin-top: clamp(3.5rem, 7vh, 6rem);
           display: flex;
           justify-content: center;
           pointer-events: none;
         }
 
         .hero-car {
-          width: min(28vw, 36rem);
+          width: min(36vw, 44rem);
           height: auto;
           opacity: 0.92;
           filter: brightness(1.16) saturate(1.04) contrast(1.05);
@@ -143,7 +140,7 @@ export default function HeroSection() {
           }
 
           .hero-car-stage {
-            bottom: clamp(4.5rem, 9svh, 6rem);
+            margin-top: 3.5rem;
           }
 
           .hero-car {
@@ -203,7 +200,7 @@ export default function HeroSection() {
 
         @media (max-width: 420px) {
           .hero-car-stage {
-            bottom: 4.5rem;
+            margin-top: 3rem;
           }
 
           .hero-car {
