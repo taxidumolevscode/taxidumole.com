@@ -18,7 +18,7 @@ export default function HeroSection() {
         />
       </div>
 
-      <div className="z-10 text-center flex flex-col items-center max-w-6xl">
+      <div className="hero-content z-10 text-center flex flex-col items-center max-w-6xl">
         <div className="w-full text-left px-3 xl:px-6">
           <FadeIn delay={0.2}>
             <h2 className="hero-eyebrow text-xs md:text-sm minW1600:!text-[1.6vw] tracking-[0.18em] md:tracking-[0.4em] uppercase mb-4">
@@ -77,13 +77,15 @@ export default function HeroSection() {
       <style jsx>{`
         .hero-shell {
           min-height: 100svh;
+          justify-content: flex-start;
+          padding-top: clamp(8rem, 17vh, 13rem);
         }
 
         .hero-car-stage {
           position: absolute;
           left: 0;
           right: 0;
-          bottom: 8vh;
+          bottom: clamp(2.5rem, 6vh, 5rem);
           z-index: 1;
           display: flex;
           justify-content: center;
@@ -91,10 +93,14 @@ export default function HeroSection() {
         }
 
         .hero-car {
-          width: min(58vw, 58rem);
+          width: min(42vw, 48rem);
           height: auto;
-          opacity: 0.72;
-          filter: brightness(1.12) saturate(1.02) contrast(1.04);
+          opacity: 0.92;
+          filter: brightness(1.16) saturate(1.04) contrast(1.05);
+        }
+
+        .hero-content {
+          transform: translateY(-2vh);
         }
 
         .hero-glow {
@@ -130,6 +136,10 @@ export default function HeroSection() {
             padding-right: 1.1rem;
             padding-top: 6rem;
             padding-bottom: 2.5rem;
+          }
+
+          .hero-content {
+            transform: none;
           }
 
           .hero-car-stage {
