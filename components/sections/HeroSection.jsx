@@ -85,7 +85,7 @@ export default function HeroSection() {
           position: absolute;
           left: 0;
           right: 0;
-          bottom: clamp(2.5rem, 6vh, 5rem);
+          bottom: clamp(3.5rem, 7vh, 5rem);
           z-index: 1;
           display: flex;
           justify-content: center;
@@ -93,7 +93,7 @@ export default function HeroSection() {
         }
 
         .hero-car {
-          width: min(42vw, 48rem);
+          width: min(28vw, 36rem);
           height: auto;
           opacity: 0.92;
           filter: brightness(1.16) saturate(1.04) contrast(1.05);
