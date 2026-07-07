@@ -24,7 +24,15 @@ export default function HeroSection() {
           <h1 className="hero-brand-title">{hero.brandTitle}</h1>
         </FadeIn>
 
-        <FadeIn delay={0.35} className="mt-8 max-w-3xl">
+        <FadeIn delay={0.32} className="hero-mascot-wrap">
+          <img
+            src="/images/taxi-du-mole-mascotte-hero.png"
+            alt="Mascotte Taxi du Môle"
+            className="hero-mascot"
+          />
+        </FadeIn>
+
+        <FadeIn delay={0.38} className="mt-8 max-w-3xl">
           <p className="hero-intro text-lg md:text-2xl text-gray-200 leading-relaxed">
             {hero.intro}
           </p>
@@ -100,6 +108,18 @@ export default function HeroSection() {
           transform: translateY(-2vh);
         }
 
+        .hero-mascot-wrap {
+          margin-top: 1.5rem;
+          width: min(34rem, 58vw);
+        }
+
+        .hero-mascot {
+          width: 100%;
+          height: auto;
+          border-radius: 0;
+          filter: brightness(1.04) contrast(1.03);
+        }
+
         .hero-glow {
           position: absolute;
           inset: auto auto 8%;
@@ -171,6 +191,11 @@ export default function HeroSection() {
 
           .hero-brand-title {
             font-size: 2.35rem;
+          }
+
+          .hero-mascot-wrap {
+            margin-top: 1.1rem;
+            width: min(18rem, 74vw);
           }
         }
 
