@@ -23,7 +23,7 @@ export default function ReserverEnLignePage() {
         <section className="bg-white text-black px-4 md:px-10 py-20 md:py-28">
           <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-8">
             <article className="rounded-[2rem] bg-black text-white p-8 md:p-10">
-              <img src={siteMeta.logoImage} alt="Logo Taxi du Môle" className="mb-8 h-28 w-64 rounded-[1rem] bg-white object-contain p-3" />
+              <img src={siteMeta.pageLogoImage} alt="Logo Taxi du Môle" className="mb-8 h-28 w-64 rounded-[1rem] bg-white object-contain p-3" />
               <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight mb-6">
                 Besoin urgent ?
               </h2>

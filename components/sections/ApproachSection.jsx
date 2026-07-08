@@ -15,7 +15,7 @@ export default function ApproachSection() {
           <FadeIn>
             <div className="rounded-[2rem] border border-white/10 bg-white p-5 shadow-2xl shadow-black/30">
               <img
-                src={siteMeta.logoImage}
+                src={siteMeta.pageLogoImage}
                 alt="Logo Taxi du Môle"
                 className="w-full object-contain"
               />

@@ -22,7 +22,7 @@ export default function ContactSection() {
         <FadeIn>
           <div className="mb-8 inline-flex rounded-[1.5rem] bg-white p-3 shadow-2xl shadow-black/30">
             <img
-              src={siteMeta.logoImage}
+              src={siteMeta.pageLogoImage}
               alt="Logo Taxi du Môle"
               className="h-24 w-56 object-contain md:h-28 md:w-72"
             />

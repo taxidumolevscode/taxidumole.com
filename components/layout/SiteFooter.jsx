@@ -8,7 +8,7 @@ export default function SiteFooter() {
         <div>
           <div className="mb-5 inline-flex rounded-[1.25rem] bg-white p-3">
             <img
-              src={siteMeta.logoImage}
+              src={siteMeta.pageLogoImage}
               alt="Logo Taxi du Môle"
               className="h-24 w-52 object-contain"
             />

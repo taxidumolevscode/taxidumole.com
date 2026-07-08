@@ -27,14 +27,14 @@ export default function MenuOverlay({ isOpen, onClose }) {
         >
           <div className="pointer-events-none fixed inset-y-0 right-0 hidden w-[58vw] opacity-[0.13] md:block">
             <img
-              src={siteMeta.logoImage}
+              src={siteMeta.pageLogoImage}
               alt=""
               className="h-full w-full scale-125 object-contain object-center"
             />
           </div>
           <div className="pointer-events-none fixed bottom-8 right-8 hidden h-24 w-24 overflow-hidden rounded-full bg-white/90 p-3 shadow-2xl shadow-black/40 md:block md:h-36 md:w-36 md:p-4">
             <img
-              src={siteMeta.logoImage}
+              src={siteMeta.pageLogoImage}
               alt=""
               className="h-full w-full rounded-full object-contain"
             />
@@ -148,7 +148,7 @@ export default function MenuOverlay({ isOpen, onClose }) {
                 <div className="grid grid-cols-[5rem_1fr] items-center gap-5 md:grid-cols-[8rem_1fr] md:gap-7">
                   <div className="overflow-hidden rounded-full bg-white p-2">
                     <img
-                      src={siteMeta.logoImage}
+                      src={siteMeta.pageLogoImage}
                       alt="Logo Taxi du Môle"
                       className="h-16 w-full rounded-full object-contain md:h-28"
                     />
