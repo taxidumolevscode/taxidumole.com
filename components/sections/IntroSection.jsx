@@ -6,6 +6,15 @@ export default function IntroSection() {
 
   return (
     <section className="py-24 md:py-40 px-6 md:px-20 bg-black relative z-10">
+      <FadeIn>
+        <div className="mb-16 flex justify-center md:mb-24">
+          <img
+            src="https://res.cloudinary.com/do6qoswp/image/upload/f_auto,q_auto/6c1862c7-feaa-4365-a0ab-5a4a3a1b2063_qglvbf"
+            alt="Taxi du Môle"
+            className="w-full max-w-[24rem] object-contain md:max-w-[34rem]"
+          />
+        </div>
+      </FadeIn>
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
         <div className="md:col-span-3 text-gray-500 font-mono text-sm">
           ( 01 )
