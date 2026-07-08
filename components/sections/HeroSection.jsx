@@ -35,7 +35,7 @@ export default function HeroSection() {
 
         <FadeIn delay={0.32} className="hero-mascot-wrap">
           <img
-            src="/images/taxi-du-mole-mascotte-hero.png"
+            src="https://res.cloudinary.com/do6qoswp/image/upload/f_auto,q_auto/573b7860-8a91-49da-bb69-b20827e60703_jquqtz"
             alt="Mascotte Taxi du Môle"
             className="hero-mascot"
           />
