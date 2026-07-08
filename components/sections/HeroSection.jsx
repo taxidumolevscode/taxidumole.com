@@ -151,6 +151,10 @@ export default function HeroSection() {
           font-weight: 800;
           letter-spacing: 0;
           text-transform: uppercase;
+          text-wrap: balance;
+          word-break: normal;
+          overflow-wrap: normal;
+          hyphens: none;
           text-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.7);
         }
 
@@ -198,9 +202,11 @@ export default function HeroSection() {
           }
 
           .hero-brand-title {
-            font-size: 1.42rem;
-            line-height: 1.16;
-            max-width: 23rem;
+            max-width: min(21rem, 88vw);
+            font-size: 1.08rem;
+            line-height: 1.35;
+            font-weight: 700;
+            text-transform: none;
           }
 
           .hero-mascot-wrap {
@@ -243,7 +249,9 @@ export default function HeroSection() {
           }
 
           .hero-brand-title {
-            font-size: 1.28rem;
+            max-width: min(20rem, 88vw);
+            font-size: 1rem;
+            line-height: 1.35;
           }
         }
       `}</style>
