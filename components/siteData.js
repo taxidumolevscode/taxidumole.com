@@ -10,7 +10,7 @@ export const siteMeta = {
   mascotImage: "/images/audi-break-taxi-side.jpeg",
   logoImage: "/images/taxi-du-mole-logo-transparent-cropped.png",
   pageLogoImage:
-    "https://res.cloudinary.com/do6qoswp/image/upload/f_auto,q_auto/F21F62F5-5504-4667-A837-006DE003934B_fgjqfd",
+    "https://res.cloudinary.com/do6qoswp/image/upload/c_fill,h_200,w_200/v1/F21F62F5-5504-4667-A837-006DE003934B_fgjqfd",
 };
 
 export const navigationItems = [
