@@ -69,7 +69,10 @@ const plannedContentHubs = [
   { name: "Transport Médical", path: "/transport-medical" },
   { name: "Transport Aéroport", path: "/transport-aeroport" },
   { name: "Longues Distances", path: "/longues-distances" },
-  { name: "Transport Scolaire Handicap", path: "/transport-scolaire-handicap" },
+  {
+    name: "Transport Scolaire Handicap",
+    path: "/taxi-transport-scolaire-bonneville-haute-savoie-vallee-arve",
+  },
   { name: "Hôpitaux", path: "/hopitaux" },
   { name: "Villes Desservies", path: "/villes" },
   { name: "Guides Transport Médical", path: "/guides" },

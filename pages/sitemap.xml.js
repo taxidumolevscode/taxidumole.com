@@ -8,6 +8,7 @@ const pages = [
   "/reserver-en-ligne",
   "/services",
   "/transferts-aeroports-gares",
+  "/taxi-transport-scolaire-bonneville-haute-savoie-vallee-arve",
   "/zones-desservies-haute-savoie",
   "/points-forts",
   "/demarches",
