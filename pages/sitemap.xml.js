@@ -9,6 +9,7 @@ const pages = [
   "/services",
   "/transferts-aeroports-gares",
   "/taxi-transport-scolaire-bonneville-haute-savoie-vallee-arve",
+  "/🚸-taxi-scolaire-2025-2026-transport-scolaire-mdph-a-bonneville-74130",
   "/zones-desservies-haute-savoie",
   "/points-forts",
   "/demarches",
@@ -30,7 +31,7 @@ export async function getServerSideProps({ res }) {
 ${pages
   .map(
     (page) => `  <url>
-    <loc>${siteMeta.siteUrl}${page === "/" ? "" : page}</loc>
+    <loc>${encodeURI(`${siteMeta.siteUrl}${page === "/" ? "" : page}`)}</loc>
     <lastmod>${now}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>${page === "/" ? "1.0" : "0.8"}</priority>
