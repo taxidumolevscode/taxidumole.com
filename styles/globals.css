@@ -56,8 +56,8 @@ button {
 .app-home-grid { display: grid; grid-template-columns: .86fr 1.14fr; gap: 64px; }
 .app-eyebrow { display: flex; gap: 8px; align-items: center; font-size: 10px; font-weight: 700; letter-spacing: 1.6px; margin: 0 0 20px; color: #666666; }
 .app-gold-dot { width: 7px; height: 7px; background: #ffb600; border-radius: 50%; }
-.app-home-booking h1 { font-size: clamp(38px, 3.6vw, 52px); font-weight: 650; line-height: 1.04; letter-spacing: -2.4px; margin: 0 0 18px; max-width: 530px; }
-.app-home-booking h1 span { display: block; }
+.app-home-booking .app-booking-title { font-size: clamp(38px, 3.6vw, 52px); font-weight: 650; line-height: 1.04; letter-spacing: -2.4px; margin: 0 0 18px; max-width: 530px; }
+.app-home-booking .app-booking-title span { display: block; }
 .app-muted { color: var(--app-muted); font-size: 14px; line-height: 1.65; }
 .app-home-subtitle { max-width: 325px; margin-bottom: 27px; }
 .app-booking { width: 100%; }
@@ -157,7 +157,7 @@ button {
   .app-desktop-nav { display: none; }
   .app-main { padding: 30px 20px 35px; }
   .app-home-grid, .app-reservation-grid { grid-template-columns: 1fr; gap: 28px; }
-  .app-home-booking h1 { font-size: 43px; letter-spacing: -2px; }.app-home-booking h1 span { display: inline; }
+  .app-home-booking .app-booking-title { font-size: 43px; letter-spacing: -2px; }.app-home-booking .app-booking-title span { display: inline; }
   .app-home-subtitle { max-width: 300px; font-size: 14px; }
   .app-eyebrow { font-size: 9px; margin-bottom: 18px; }
   .app-journey-copy p { font-size: 29px; }
@@ -185,3 +185,24 @@ button {
 .app-steps .is-current > span { background: #171717; color: #fff; }
 
 .app-text-link { text-decoration: underline !important; text-decoration-color: var(--app-gold) !important; text-underline-offset: 5px; text-decoration-thickness: 2px !important; }
+
+/* Homepage brand introduction, followed by the booking interface. */
+.app-home-shell .app-header { background: #080808; color: #f4f1e9; border-color: #ffffff14; }
+.app-home-shell .app-brand small { color: #b0b0b0; }
+.app-home-shell .app-desktop-nav a { color: #c8c8c8; }
+.app-home-shell .app-desktop-nav a[aria-current], .app-home-shell .app-desktop-nav a:hover { background: #ffffff12; color: #fff; }
+.app-home-shell .app-call { border-color: #ffffff30; }
+.app-home-shell .app-call svg { color: #ffb600; }
+.app-brand-hero { background: #080808; color: #f4f1e9; padding: 28px 28px 30px; text-align: center; overflow: hidden; }
+.app-brand-hero h1 { max-width: 1240px; margin: 0 auto 26px; font-size: clamp(28px, 4.5vw, 68px); font-weight: 800; line-height: 1.08; letter-spacing: -.04em; text-transform: uppercase; text-wrap: balance; }
+.app-brand-hero-image { display: block; width: min(100%, 1240px); height: auto; max-height: 64vh; object-fit: contain; margin: 0 auto; }
+.app-hero-scroll { display: inline-flex; align-items: center; justify-content: center; gap: 18px; margin-top: 24px; font-size: 12px; color: #d4d4d4; }
+.app-hero-scroll span { color: #ffb600; font-size: 22px; }
+.app-hero-scroll:hover { color: #fff; }
+#preparer-trajet { scroll-margin-top: 24px; }
+@media (max-width: 767px) {
+  .app-brand-hero { padding: 24px 18px 28px; }
+  .app-brand-hero h1 { font-size: clamp(25px, 6.7vw, 42px); margin-bottom: 25px; }
+  .app-brand-hero-image { max-height: none; width: 100%; }
+  .app-hero-scroll { margin-top: 22px; }
+}

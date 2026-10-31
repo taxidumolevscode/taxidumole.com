@@ -11,9 +11,9 @@ const tabs = [
   ['/reserver-en-ligne', 'Réserver', CalendarDays],
 ];
 
-export default function AppShell({ children }) {
+export default function AppShell({ children, hero }) {
   const { pathname } = useRouter();
-  return <div className="mobility-app">
+  return <div className={`mobility-app${hero ? ' app-home-shell' : ''}`}>
     <header className="app-header">
       <Link href="/" className="app-brand" aria-label="Taxi du Môle — accueil">
         <img src={siteMeta.logoImage} alt="" />
@@ -24,7 +24,10 @@ export default function AppShell({ children }) {
       </nav>
       <a className="app-call" href={siteMeta.phoneHref} aria-label={`Appeler le ${siteMeta.phoneDisplay}`}><Phone size={17} /><span>{siteMeta.phoneDisplay}</span></a>
     </header>
-    <main className="app-main">{children}</main>
+    <main>
+      {hero}
+      <div className="app-main">{children}</div>
+    </main>
     <footer className="app-footer">
       <span>Taxi du Môle <span className="app-muted">· Bonneville, Haute-Savoie</span></span>
       <div><Link href="/contact">Contact <ArrowUpRight size={13}/></Link><Link href="/mentions-legales">Mentions légales</Link><Link href="/politique-confidentialite">Confidentialité</Link></div>

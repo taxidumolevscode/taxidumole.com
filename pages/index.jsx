@@ -40,11 +40,22 @@ export default function Home() {
           faqSchema,
         ]}
       />
-      <AppShell>
-        <div className="app-home-grid">
+      <AppShell hero={
+        <section className="app-brand-hero" aria-labelledby="home-brand-title">
+          <h1 id="home-brand-title">Services de transport de personnes en Haute-Savoie</h1>
+          <img
+            className="app-brand-hero-image"
+            src="https://res.cloudinary.com/do6qoswp/image/upload/v1783513373/573b7860-8a91-49da-bb69-b20827e60703_jquqtz.png"
+            alt="Taxi du Môle : notre chauffeur et le logo de la marque"
+            fetchPriority="high"
+          />
+          <a href="#preparer-trajet" className="app-hero-scroll">Préparer mon trajet <span aria-hidden="true">↓</span></a>
+        </section>
+      }>
+        <div id="preparer-trajet" className="app-home-grid">
           <section className="app-home-booking">
             <p className="app-eyebrow"><span className="app-gold-dot"/> VOTRE TAXI, TOUT SIMPLEMENT</p>
-            <h1>Où souhaitez-vous <span>aller ?</span></h1>
+            <h2 className="app-booking-title">Où souhaitez-vous <span>aller ?</span></h2>
             <p className="app-muted app-home-subtitle">Un départ, une destination. Nous nous occupons du trajet.</p>
             <BookingForm compact />
           </section>
