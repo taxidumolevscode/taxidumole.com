@@ -3,7 +3,7 @@ import { Camera } from 'lucide-react';
 
 export default function LoadingScreen() {
   return (
-    <div className="fixed inset-0 bg-black text-white flex flex-col items-center justify-center z-50">
+    <div className="fixed inset-0 bg-white text-black flex flex-col items-center justify-center z-50">
       <motion.div 
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 

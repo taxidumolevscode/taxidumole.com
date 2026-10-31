@@ -37,7 +37,7 @@ export default function TransfersPage() {
                   <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4">
                     {title}
                   </h2>
-                  <p className="text-neutral-700 text-lg leading-relaxed">
+                  <p className="text-neutral-600 text-lg leading-relaxed">
                     {text}
                   </p>
                 </article>
@@ -46,9 +46,9 @@ export default function TransfersPage() {
           </div>
 
           <FadeIn delay={0.12}>
-            <div className="mt-14 rounded-[2rem] bg-black text-white p-8 md:p-10 flex flex-col md:flex-row gap-6 md:items-center md:justify-between">
+            <div className="mt-14 rounded-[2rem] bg-white text-black p-8 md:p-10 flex flex-col md:flex-row gap-6 md:items-center md:justify-between">
               <div>
-                <p className="text-xs uppercase tracking-[0.32em] text-gray-500 mb-4">
+                <p className="text-xs uppercase tracking-[0.32em] text-neutral-600 mb-4">
                   Demande Rapide
                 </p>
                 <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight">

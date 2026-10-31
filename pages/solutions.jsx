@@ -27,7 +27,7 @@ export default function SolutionsPage() {
                   <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-4">
                     {card.title}
                   </h2>
-                  <p className="text-neutral-700 text-lg leading-relaxed">
+                  <p className="text-neutral-600 text-lg leading-relaxed">
                     {card.text}
                   </p>
                 </article>
@@ -36,8 +36,8 @@ export default function SolutionsPage() {
           </div>
 
           <FadeIn delay={0.18}>
-            <div className="mt-16 rounded-[2rem] bg-black text-white p-8 md:p-10">
-              <p className="text-xs uppercase tracking-[0.32em] text-gray-500 mb-5">
+            <div className="mt-16 rounded-[2rem] bg-white text-black p-8 md:p-10">
+              <p className="text-xs uppercase tracking-[0.32em] text-neutral-600 mb-5">
                 Lecture Simple
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -45,7 +45,7 @@ export default function SolutionsPage() {
                   <h2 className="text-2xl font-black uppercase tracking-tight mb-3">
                     Trajets Locaux
                   </h2>
-                  <p className="text-gray-300 leading-relaxed">
+                  <p className="text-neutral-600 leading-relaxed">
                     Courses autour de Bonneville, rendez-vous, départs en gare, retours à domicile et trajets du quotidien.
                   </p>
                 </div>
@@ -53,7 +53,7 @@ export default function SolutionsPage() {
                   <h2 className="text-2xl font-black uppercase tracking-tight mb-3">
                     Aéroports Et Gares
                   </h2>
-                  <p className="text-gray-300 leading-relaxed">
+                  <p className="text-neutral-600 leading-relaxed">
                     Organisation des horaires, bagages, terminaux et correspondances pour réduire le stress du départ.
                   </p>
                 </div>
@@ -61,7 +61,7 @@ export default function SolutionsPage() {
                   <h2 className="text-2xl font-black uppercase tracking-tight mb-3">
                     Taxi du Môle
                   </h2>
-                  <p className="text-gray-300 leading-relaxed">
+                  <p className="text-neutral-600 leading-relaxed">
                     Le site met en avant un transport calme, ponctuel et compréhensible pour les clients qui veulent une solution claire.
                   </p>
                 </div>

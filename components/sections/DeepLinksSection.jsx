@@ -7,7 +7,7 @@ export default function DeepLinksSection() {
     <section className="py-24 md:py-32 px-4 md:px-10 bg-white text-black">
       <div className="max-w-7xl mx-auto">
         <div className="mb-14 text-center">
-          <span className="block text-xs uppercase tracking-[0.32em] text-gray-500 mb-4">
+          <span className="block text-xs uppercase tracking-[0.32em] text-neutral-600 mb-4">
             ( 07 ) SOUS-PAGES
           </span>
           <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter max-w-5xl mx-auto">
@@ -23,7 +23,7 @@ export default function DeepLinksSection() {
                   <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4">
                     {item.title}
                   </h3>
-                  <p className="text-neutral-700 text-lg leading-relaxed">
+                  <p className="text-neutral-600 text-lg leading-relaxed">
                     {item.text}
                   </p>
                 </div>

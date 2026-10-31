@@ -1,14 +1,7 @@
 import SeoHead from '../components/layout/SeoHead';
-import SiteLayout from '../components/layout/SiteLayout';
-import HeroSection from '../components/sections/HeroSection';
-import IntroSection from '../components/sections/IntroSection';
-import PortfolioSection from '../components/sections/PortfolioSection';
-import ApproachSection from '../components/sections/ApproachSection';
-import PricingSection from '../components/sections/PricingSection';
-import TestimonialSection from '../components/sections/TestimonialSection';
-import ContactSection from '../components/sections/ContactSection';
-import OfficialSection from '../components/sections/OfficialSection';
-import DeepLinksSection from '../components/sections/DeepLinksSection';
+import AppShell from '../components/mobility/AppShell';
+import BookingForm from '../components/mobility/BookingForm';
+import JourneyPanel, { ServiceShortcuts } from '../components/mobility/JourneyPanel';
 import { faqContent } from '../components/siteData';
 import {
   baseStructuredData,
@@ -47,17 +40,19 @@ export default function Home() {
           faqSchema,
         ]}
       />
-      <SiteLayout>
-        <HeroSection />
-        <IntroSection />
-        <PortfolioSection />
-        <ApproachSection />
-        <PricingSection />
-        <TestimonialSection />
-        <OfficialSection />
-        <DeepLinksSection />
-        <ContactSection />
-      </SiteLayout>
+      <AppShell>
+        <div className="app-home-grid">
+          <section className="app-home-booking">
+            <p className="app-eyebrow"><span className="app-gold-dot"/> VOTRE TAXI, TOUT SIMPLEMENT</p>
+            <h1>Où souhaitez-vous <span>aller ?</span></h1>
+            <p className="app-muted app-home-subtitle">Un départ, une destination. Nous nous occupons du trajet.</p>
+            <BookingForm compact />
+          </section>
+          <JourneyPanel />
+        </div>
+        <div className="app-section-heading"><div><p className="app-eyebrow">À CHAQUE ENVIE, SON TRAJET</p><h2>Vous allez aimer prendre la route.</h2></div><span className="app-muted">Bonneville · Genève · Les Alpes</span></div>
+        <ServiceShortcuts />
+      </AppShell>
     </>
   );
 }

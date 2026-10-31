@@ -1,8 +1,7 @@
 import Link from "next/link";
 import FadeIn from "../components/animations/FadeIn";
 import SeoHead from "../components/layout/SeoHead";
-import SiteLayout from "../components/layout/SiteLayout";
-import PageHero from "../components/sections/PageHero";
+import AppShell, { PageIntro } from "../components/mobility/AppShell";
 import { siteMeta } from "../components/siteData";
 
 const skiBlocks = [
@@ -25,48 +24,46 @@ export default function SkiTransfertPage() {
         title="Ski Transfert"
         description="Ski transfert Taxi du Môle depuis Genève aéroport, Genève gare et la Haute-Savoie vers Chamonix, Flaine, Samoëns, Megève et les stations."
       />
-      <SiteLayout>
-        <PageHero
+      <AppShell>
+        <PageIntro
           eyebrow="Ski Transfert"
           title="Rejoindre les stations sans stress, skis et bagages avec vous."
-          intro="Un transfert ski efficace commence avant l'arrivée: horaire, lieu exact, équipement et nombre de passagers sont confirmés pour éviter l'improvisation."
-          image={siteMeta.heroImage}
-        />
+        >Un transfert ski efficace commence avant l'arrivée: horaire, lieu exact, équipement et nombre de passagers sont confirmés pour éviter l'improvisation.</PageIntro>
 
-        <section className="bg-white text-black px-4 md:px-10 py-20 md:py-28">
+        <section className="app-content-section">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14">
             {skiBlocks.map(([title, text], index) => (
               <FadeIn key={title} delay={index * 0.08}>
-                <article className="rounded-[2rem] bg-neutral-100 p-8 min-h-[16rem]">
-                  <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-5">{title}</h2>
-                  <p className="text-neutral-700 text-lg leading-relaxed">{text}</p>
+                <article className="rounded-2xl bg-white border border-neutral-200 p-8 min-h-[16rem]">
+                  <h2 className="text-xl md:text-2xl font-semibold tracking-tight mb-5">{title}</h2>
+                  <p className="text-neutral-600 text-lg leading-relaxed">{text}</p>
                 </article>
               </FadeIn>
             ))}
           </div>
 
           <FadeIn>
-            <div className="rounded-[2rem] bg-black text-white p-8 md:p-10">
-              <p className="text-xs uppercase tracking-[0.32em] text-gray-500 mb-5">Réponses rapides Google / IA</p>
+            <div className="rounded-2xl bg-white text-black p-8 md:p-10">
+              <p className="text-xs uppercase tracking-[0.32em] text-neutral-600 mb-5">Pour préparer votre séjour</p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {resortAnswers.map((answer) => (
-                  <p key={answer} className="border-t border-white/10 pt-5 text-gray-300 leading-relaxed">
+                  <p key={answer} className="border-t border-black/10 pt-5 text-neutral-600 leading-relaxed">
                     {answer}
                   </p>
                 ))}
               </div>
               <div className="mt-10 flex flex-col md:flex-row gap-4">
-                <Link href="/tarifs" className="inline-flex justify-center bg-white text-black px-8 py-4 text-sm font-bold uppercase tracking-[0.22em]">
+                <Link href="/tarifs" className="inline-flex justify-center app-secondary">
                   Voir Les Tarifs
                 </Link>
-                <Link href="/reserver-en-ligne" className="inline-flex justify-center border border-white px-8 py-4 text-sm font-bold uppercase tracking-[0.22em]">
+                <Link href="/reserver-en-ligne" className="inline-flex justify-center app-secondary">
                   Réserver En Ligne
                 </Link>
               </div>
             </div>
           </FadeIn>
         </section>
-      </SiteLayout>
+      </AppShell>
     </>
   );
 }

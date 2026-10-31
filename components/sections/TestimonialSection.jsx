@@ -7,7 +7,7 @@ export default function TestimonialSection() {
   return (
     <section className="py-24 bg-neutral-100 text-black">
       <div className="lg:max-w-4xl mx-auto px-4 md:px-6 text-center">
-        <span className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-8 block">
+        <span className="text-xs font-bold uppercase tracking-widest text-neutral-600 mb-8 block">
           ( 05 ) PREUVES
         </span>
         
@@ -19,7 +19,7 @@ export default function TestimonialSection() {
             <span className="text-sm font-bold uppercase tracking-widest">
               {proof.author}
             </span>
-            <span className="text-xs text-gray-500">{proof.meta}</span>
+            <span className="text-xs text-neutral-600">{proof.meta}</span>
           </div>
         </FadeIn>
       </div>

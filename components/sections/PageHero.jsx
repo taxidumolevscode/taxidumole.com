@@ -11,12 +11,12 @@ export default function PageHero({ eyebrow, title, intro, image }) {
           className="page-hero-image w-full h-full object-cover grayscale"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/55 to-black" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/55 to-white" />
       <div className="page-hero-accent" />
 
       <div className="relative z-10 max-w-5xl">
         <FadeIn>
-          <span className="block text-xs md:text-sm tracking-[0.32em] uppercase text-gray-400 mb-5">
+          <span className="block text-xs md:text-sm tracking-[0.32em] uppercase text-neutral-600 mb-5">
             {eyebrow}
           </span>
         </FadeIn>
@@ -26,7 +26,7 @@ export default function PageHero({ eyebrow, title, intro, image }) {
           </h1>
         </FadeIn>
         <FadeIn delay={0.2}>
-          <p className="mt-8 text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl">
+          <p className="mt-8 text-lg md:text-xl text-neutral-600 leading-relaxed max-w-2xl">
             {intro}
           </p>
         </FadeIn>

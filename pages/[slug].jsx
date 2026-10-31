@@ -45,14 +45,14 @@ export default function TaxiScolaireMdphPage() {
         <section className="bg-white px-4 py-20 text-black md:px-10 md:py-28">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-[0.85fr_1.15fr]">
             <FadeIn>
-              <article className="rounded-[2rem] bg-black p-8 text-white md:p-10">
+              <article className="rounded-[2rem] bg-white p-8 text-black md:p-10">
                 <p className="mb-5 text-xs font-black uppercase tracking-[0.28em] text-[#f4bd35]">
                   Taxi du Môle
                 </p>
                 <h1 className="mb-6 text-3xl font-black uppercase leading-tight md:text-5xl">
                   Taxi scolaire à Bonneville.
                 </h1>
-                <p className="text-lg leading-relaxed text-gray-300">
+                <p className="text-lg leading-relaxed text-neutral-600">
                   Pour préparer une demande de transport scolaire, le plus rapide est de transmettre les horaires, les adresses et les contraintes du trajet.
                 </p>
                 <div className="mt-8 flex flex-col gap-3">
@@ -64,7 +64,7 @@ export default function TaxiScolaireMdphPage() {
                   </a>
                   <Link
                     href="/reserver-en-ligne"
-                    className="inline-flex justify-center border border-white px-7 py-4 text-sm font-black uppercase tracking-[0.22em] text-white"
+                    className="inline-flex justify-center border border-black px-7 py-4 text-sm font-black uppercase tracking-[0.22em] text-black"
                   >
                     Envoyer Une Demande
                   </Link>
@@ -76,13 +76,13 @@ export default function TaxiScolaireMdphPage() {
               {schoolTransportDetails.map((item, index) => (
                 <FadeIn key={item.title} delay={index * 0.06}>
                   <article className="h-full rounded-[2rem] bg-neutral-100 p-7 md:p-8">
-                    <p className="mb-5 text-xs font-black uppercase tracking-[0.28em] text-neutral-500">
+                    <p className="mb-5 text-xs font-black uppercase tracking-[0.28em] text-neutral-600">
                       0{index + 1}
                     </p>
                     <h2 className="mb-4 text-2xl font-black uppercase leading-tight">
                       {item.title}
                     </h2>
-                    <p className="text-base leading-relaxed text-neutral-700">
+                    <p className="text-base leading-relaxed text-neutral-600">
                       {item.text}
                     </p>
                   </article>

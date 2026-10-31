@@ -32,7 +32,7 @@ export default function ZonesDesserviesPage() {
               <FadeIn key={title} delay={index * 0.06}>
                 <article className="rounded-[2rem] bg-neutral-100 p-8 min-h-[15rem]">
                   <h2 className="text-3xl font-black uppercase tracking-tight mb-4">{title}</h2>
-                  <p className="text-neutral-700 leading-relaxed">{text}</p>
+                  <p className="text-neutral-600 leading-relaxed">{text}</p>
                 </article>
               </FadeIn>
             ))}

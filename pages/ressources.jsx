@@ -29,7 +29,7 @@ export default function RessourcesPage() {
                     <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4">
                       {source.title}
                     </h2>
-                    <p className="text-neutral-700 leading-relaxed">{source.detail}</p>
+                    <p className="text-neutral-600 leading-relaxed">{source.detail}</p>
                   </div>
                   <a
                     href={source.link}
@@ -52,7 +52,7 @@ export default function RessourcesPage() {
                     <h3 className="text-2xl font-black uppercase tracking-tight mb-4">
                       {item.title}
                     </h3>
-                    <p className="text-neutral-700 leading-relaxed">{item.text}</p>
+                    <p className="text-neutral-600 leading-relaxed">{item.text}</p>
                   </div>
                   <Link
                     href={item.href}

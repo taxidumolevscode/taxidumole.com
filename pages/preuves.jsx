@@ -36,13 +36,13 @@ export default function PreuvesPage() {
           </div>
 
           <FadeIn>
-            <div className="rounded-[2rem] bg-black text-white p-8 md:p-10">
-              <p className="text-xs uppercase tracking-[0.32em] text-gray-500 mb-5">
+            <div className="rounded-[2rem] bg-white text-black p-8 md:p-10">
+              <p className="text-xs uppercase tracking-[0.32em] text-neutral-600 mb-5">
                 Sources Utiles
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {preuvesContent.sources.map((source) => (
-                  <div key={source} className="border-t border-white/10 pt-5">
+                  <div key={source} className="border-t border-black/10 pt-5">
                     <h3 className="text-2xl font-black uppercase tracking-tight">
                       {source}
                     </h3>
@@ -54,10 +54,10 @@ export default function PreuvesPage() {
 
           <FadeIn delay={0.12}>
             <div className="mt-10 rounded-[2rem] bg-neutral-100 p-8 md:p-10">
-              <p className="text-xs uppercase tracking-[0.32em] text-gray-500 mb-5">
+              <p className="text-xs uppercase tracking-[0.32em] text-neutral-600 mb-5">
                 Repères Vérifiés
               </p>
-              <div className="space-y-4 text-lg text-neutral-700 leading-relaxed">
+              <div className="space-y-4 text-lg text-neutral-600 leading-relaxed">
                 {preuvesContent.notes.map((note) => (
                   <p key={note} className="border-t border-neutral-200 pt-4">
                     {note}

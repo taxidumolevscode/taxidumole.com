@@ -31,7 +31,7 @@ export default function PointsFortsPage() {
                     <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight mb-4">
                       {item.title}
                     </h2>
-                    <p className="text-base md:text-lg text-neutral-700 leading-relaxed">
+                    <p className="text-base md:text-lg text-neutral-600 leading-relaxed">
                       {item.text}
                     </p>
                   </div>

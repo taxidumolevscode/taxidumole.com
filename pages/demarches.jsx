@@ -28,15 +28,15 @@ export default function DemarchesPage() {
           <div className="max-w-6xl mx-auto space-y-6">
             {demarchesContent.steps.map((step, index) => (
               <FadeIn key={step.title} delay={index * 0.08}>
-                <article className="grid grid-cols-1 md:grid-cols-12 gap-6 border-t border-white/10 py-8">
-                  <div className="md:col-span-2 text-gray-500 text-sm md:text-base font-mono">
+                <article className="grid grid-cols-1 md:grid-cols-12 gap-6 border-t border-black/10 py-8">
+                  <div className="md:col-span-2 text-neutral-600 text-sm md:text-base font-mono">
                     0{index + 1}
                   </div>
                   <div className="md:col-span-10">
                     <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tight mb-4">
                       {step.title}
                     </h2>
-                    <p className="text-gray-300 text-lg leading-relaxed max-w-3xl">
+                    <p className="text-neutral-600 text-lg leading-relaxed max-w-3xl">
                       {step.text}
                     </p>
                   </div>
@@ -48,10 +48,10 @@ export default function DemarchesPage() {
           <div className="max-w-6xl mx-auto mt-20 grid grid-cols-1 lg:grid-cols-2 gap-8">
             <FadeIn>
               <article className="rounded-[2rem] bg-white text-black p-8 md:p-10 h-full">
-                <p className="text-xs uppercase tracking-[0.32em] text-gray-500 mb-5">
+                <p className="text-xs uppercase tracking-[0.32em] text-neutral-600 mb-5">
                   Informations Souvent Utiles
                 </p>
-                <ul className="space-y-4 text-lg leading-relaxed text-neutral-700">
+                <ul className="space-y-4 text-lg leading-relaxed text-neutral-600">
                   {demarchesDocuments.map((doc) => (
                     <li key={doc} className="border-t border-neutral-200 pt-4">
                       {doc}
@@ -62,18 +62,18 @@ export default function DemarchesPage() {
             </FadeIn>
 
             <FadeIn delay={0.08}>
-              <article className="rounded-[2rem] border border-white/10 bg-white/5 p-8 md:p-10 h-full">
-                <p className="text-xs uppercase tracking-[0.32em] text-gray-500 mb-5">
+              <article className="rounded-[2rem] border border-black/10 bg-white/5 p-8 md:p-10 h-full">
+                <p className="text-xs uppercase tracking-[0.32em] text-neutral-600 mb-5">
                   Contacts Et Zones
                 </p>
                 <div className="space-y-6">
                   {officialContacts.map((item) => (
-                    <div key={item.title} className="border-t border-white/10 pt-5">
+                    <div key={item.title} className="border-t border-black/10 pt-5">
                       <h2 className="text-2xl font-black uppercase tracking-tight mb-2">
                         {item.title}
                       </h2>
-                      <p className="text-gray-400 leading-relaxed mb-3">{item.text}</p>
-                      <a href={item.href} className="text-white text-lg">
+                      <p className="text-neutral-600 leading-relaxed mb-3">{item.text}</p>
+                      <a href={item.href} className="text-black text-lg">
                         {item.value}
                       </a>
                     </div>

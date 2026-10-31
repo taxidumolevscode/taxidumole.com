@@ -11,13 +11,13 @@ export default function Custom404() {
       />
       <SiteLayout>
         <section className="px-4 md:px-10 pt-40 pb-28 max-w-4xl">
-          <p className="text-xs uppercase tracking-[0.32em] text-gray-500 mb-6">
+          <p className="text-xs uppercase tracking-[0.32em] text-neutral-600 mb-6">
             Erreur 404
           </p>
           <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-8">
             Cette Page N&apos;Existe Pas.
           </h1>
-          <p className="text-lg text-gray-300 leading-relaxed mb-10 max-w-2xl">
+          <p className="text-lg text-neutral-600 leading-relaxed mb-10 max-w-2xl">
             Revenez vers l&apos;accueil ou utilisez le menu pour poursuivre votre navigation sur le site Taxi du Môle.
           </p>
           <Link

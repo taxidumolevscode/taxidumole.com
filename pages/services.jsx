@@ -27,7 +27,7 @@ export default function ServicesPage() {
                   <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-4">
                     {card.title}
                   </h2>
-                  <p className="text-neutral-700 text-lg leading-relaxed">
+                  <p className="text-neutral-600 text-lg leading-relaxed">
                     {card.text}
                   </p>
                 </article>

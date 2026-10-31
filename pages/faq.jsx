@@ -51,11 +51,11 @@ export default function FaqPage() {
           <div className="max-w-5xl mx-auto">
             {faqContent.map((item, index) => (
               <FadeIn key={item.question} delay={index * 0.05}>
-                <article className="border-t border-white/10 py-8">
+                <article className="border-t border-black/10 py-8">
                   <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tight mb-4">
                     {item.question}
                   </h2>
-                  <p className="text-gray-300 text-lg leading-relaxed max-w-3xl">
+                  <p className="text-neutral-600 text-lg leading-relaxed max-w-3xl">
                     {item.answer}
                   </p>
                 </article>

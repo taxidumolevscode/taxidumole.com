@@ -38,7 +38,7 @@ export default function PortfolioSection() {
     <section className="py-20 bg-white text-black">
       <div className="px-4 md:px-10 mb-20 lg:flex justify-between items-end">
         <div>
-          <span className="block text-xs font-bold tracking-widest uppercase mb-2 text-gray-400">
+          <span className="block text-xs font-bold tracking-widest uppercase mb-2 text-neutral-600">
             ( 02 )
           </span>
           <h2 className="text-[2.45rem] leading-[0.95] md:text-6xl xl:text-8xl font-black uppercase tracking-[-0.05em] max-w-[13ch]">
@@ -75,7 +75,7 @@ export default function PortfolioSection() {
                 <span className="text-sm font-bold uppercase tracking-[0.15em] max-w-[16ch] leading-[1.2]">
                   {item.title}
                 </span>
-                <span className="text-xs text-gray-500 sm:text-right sm:max-w-[14ch]">
+                <span className="text-xs text-neutral-600 sm:text-right sm:max-w-[14ch]">
                   {item.subtitle}
                 </span>
               </div>

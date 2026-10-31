@@ -23,7 +23,7 @@ export default function SiteLayout({ children }) {
   }, []);
 
   return (
-    <div className="bg-black text-white min-h-screen font-sans selection:bg-white selection:text-black overflow-x-hidden">
+    <div className="bg-white text-black min-h-screen font-sans selection:bg-white selection:text-black overflow-x-hidden">
       <Navigation onMenuOpen={() => setMenuOpen(true)} />
       <MenuOverlay isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
       {children}

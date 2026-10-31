@@ -7,9 +7,8 @@ export default function HeroSection() {
   const { hero } = homeContent;
 
   return (
-    <header className="hero-shell relative w-full h-screen flex flex-col justify-center items-center overflow-hidden px-4">
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-neutral-950 to-black z-0" />
-      <div className="hero-glow" />
+    <header className="hero-shell relative w-full flex flex-col justify-center items-center overflow-hidden px-4 pb-16">
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-white to-white z-0" />
 
       <div className="hero-content z-10 text-center flex flex-col items-center max-w-6xl">
         <div className="w-full text-left px-3 xl:px-6">
@@ -42,7 +41,7 @@ export default function HeroSection() {
         </FadeIn>
 
         <FadeIn delay={0.38} className="mt-8 max-w-3xl">
-          <p className="hero-intro text-lg md:text-2xl text-gray-200 leading-relaxed">
+          <p className="hero-intro text-lg md:text-2xl text-neutral-600 leading-relaxed">
             {hero.intro}
           </p>
         </FadeIn>
@@ -50,13 +49,13 @@ export default function HeroSection() {
         <FadeIn delay={0.45} className="mt-8 flex flex-col sm:flex-row gap-4">
           <Link
             href="/contact"
-            className="inline-flex justify-center px-8 py-4 bg-white text-black text-xs md:text-sm font-bold uppercase tracking-[0.24em] hover:bg-gray-200 transition-colors"
+            className="inline-flex justify-center px-8 py-4 bg-black text-white text-xs md:text-sm font-bold uppercase tracking-[0.24em] hover:bg-gray-800 transition-colors"
           >
             {hero.primaryCta}
           </Link>
           <a
             href={siteMeta.phoneHref}
-            className="inline-flex justify-center px-8 py-4 border border-white text-white text-xs md:text-sm font-bold uppercase tracking-[0.24em] hover:bg-white hover:text-black transition-colors"
+            className="inline-flex justify-center px-8 py-4 border border-black text-black text-xs md:text-sm font-bold uppercase tracking-[0.24em] hover:bg-white hover:text-black transition-colors"
           >
             {hero.secondaryCta}
           </a>
@@ -66,7 +65,7 @@ export default function HeroSection() {
           {hero.bullets.map((item) => (
             <span
               key={item}
-              className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-[11px] md:text-xs uppercase tracking-[0.18em]"
+              className="rounded-full border border-black/20 bg-white/10 px-4 py-2 text-[11px] md:text-xs uppercase tracking-[0.18em]"
             >
               {item}
             </span>
@@ -145,7 +144,7 @@ export default function HeroSection() {
         .hero-brand-title {
           margin: 0 auto;
           max-width: min(76rem, 92vw);
-          color: #fff8ea;
+          color: #171717;
           font-size: 1.85rem;
           line-height: 1.12;
           font-weight: 800;
@@ -155,7 +154,7 @@ export default function HeroSection() {
           word-break: normal;
           overflow-wrap: normal;
           hyphens: none;
-          text-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.7);
+          text-shadow: none;
         }
 
         @media (max-width: 768px) {
