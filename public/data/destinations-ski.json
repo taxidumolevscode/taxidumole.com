@@ -1,0 +1,1197 @@
+{
+  "version": 1,
+  "origins": [
+    {
+      "id": "GenevaAirport",
+      "label": "Genève Aéroport"
+    },
+    {
+      "id": "AnnemasseGare",
+      "label": "Gare d’Annemasse"
+    },
+    {
+      "id": "ClusesGare",
+      "label": "Gare de Cluses"
+    },
+    {
+      "id": "Bonneville",
+      "label": "Bonneville (74130)"
+    }
+  ],
+  "groups": [
+    {
+      "id": "portes-du-soleil-chablais",
+      "label": "Portes du Soleil – Chablais",
+      "destinations": [
+        {
+          "id": "abondance",
+          "label": "Abondance",
+          "type": "station",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "avoriaz-1800",
+          "label": "Avoriaz 1800",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Accueil station",
+            "Parking"
+          ]
+        },
+        {
+          "id": "chatel",
+          "label": "Châtel",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Linga",
+            "Pré-la-Joux",
+            "Plaine-Dranse"
+          ]
+        },
+        {
+          "id": "la-chapelle-dabondance",
+          "label": "La Chapelle-d’Abondance",
+          "type": "station",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "les-gets",
+          "label": "Les Gets",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Centre",
+            "Les Perrières"
+          ]
+        },
+        {
+          "id": "montriond",
+          "label": "Montriond",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Lac de Montriond",
+            "Ardent"
+          ]
+        },
+        {
+          "id": "morzine",
+          "label": "Morzine",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Centre",
+            "Les Prodains"
+          ]
+        },
+        {
+          "id": "saint-jean-daulps",
+          "label": "Saint-Jean-d’Aulps",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Roc d’Enfer"
+          ]
+        },
+        {
+          "id": "champery",
+          "label": "Champéry",
+          "type": "station",
+          "country": "CH",
+          "sectors": []
+        },
+        {
+          "id": "morgins",
+          "label": "Morgins",
+          "type": "station",
+          "country": "CH",
+          "sectors": []
+        },
+        {
+          "id": "torgon",
+          "label": "Torgon",
+          "type": "station",
+          "country": "CH",
+          "sectors": []
+        },
+        {
+          "id": "val-dilliez",
+          "label": "Val-d’Illiez",
+          "type": "station",
+          "country": "CH",
+          "sectors": [
+            "Les Crosets",
+            "Champoussin"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grand-massif-giffre-et-arve",
+      "label": "Grand Massif – Giffre et Arve",
+      "destinations": [
+        {
+          "id": "flaine",
+          "label": "Flaine",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Flaine Forêt",
+            "Flaine Forum",
+            "Flaine Front de Neige",
+            "Flaine Montsoleil"
+          ]
+        },
+        {
+          "id": "les-carroz-daraches",
+          "label": "Les Carroz-d’Arâches",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Centre",
+            "Les Molliets"
+          ]
+        },
+        {
+          "id": "morillon",
+          "label": "Morillon",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Village",
+            "Morillon 1100 – Les Esserts"
+          ]
+        },
+        {
+          "id": "samoens",
+          "label": "Samoëns",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Village",
+            "Samoëns 1600"
+          ]
+        },
+        {
+          "id": "sixt-fer-a-cheval",
+          "label": "Sixt-Fer-à-Cheval",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Village",
+            "Secteur skiable"
+          ]
+        },
+        {
+          "id": "verchaix",
+          "label": "Verchaix",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "la-riviere-enverse",
+          "label": "La Rivière-Enverse",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "araches-la-frasse",
+          "label": "Arâches-la-Frasse",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "chatillon-sur-cluses",
+          "label": "Châtillon-sur-Cluses",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "saint-sigismond",
+          "label": "Saint-Sigismond",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        }
+      ]
+    },
+    {
+      "id": "aravis-bornes-aravis",
+      "label": "Aravis – Bornes-Aravis",
+      "destinations": [
+        {
+          "id": "la-clusaz",
+          "label": "La Clusaz",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Centre",
+            "Les Confins",
+            "Balme",
+            "Bossonnet",
+            "L’Étale"
+          ]
+        },
+        {
+          "id": "le-grand-bornand",
+          "label": "Le Grand-Bornand",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Village",
+            "Le Chinaillon"
+          ]
+        },
+        {
+          "id": "manigod",
+          "label": "Manigod",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Col de Merdassier",
+            "Croix Fry"
+          ]
+        },
+        {
+          "id": "saint-jean-de-sixt",
+          "label": "Saint-Jean-de-Sixt",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "thones",
+          "label": "Thônes",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "les-clefs",
+          "label": "Les Clefs",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "entremont",
+          "label": "Entremont",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "le-petit-bornand-glieres-val-de-borne",
+          "label": "Le Petit-Bornand (Glières-Val-de-Borne)",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "dingy-saint-clair",
+          "label": "Dingy-Saint-Clair",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        }
+      ]
+    },
+    {
+      "id": "pays-du-mont-blanc-evasion-mont-blanc",
+      "label": "Pays du Mont-Blanc – Évasion Mont-Blanc",
+      "destinations": [
+        {
+          "id": "megeve",
+          "label": "Megève",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Centre",
+            "Rochebrune",
+            "Mont d’Arbois",
+            "Le Jaillet",
+            "Demi-Quartier"
+          ]
+        },
+        {
+          "id": "saint-gervais-les-bains",
+          "label": "Saint-Gervais-les-Bains",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Le Bettex",
+            "Saint-Nicolas-de-Véroce"
+          ]
+        },
+        {
+          "id": "les-contamines-montjoie",
+          "label": "Les Contamines-Montjoie",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Centre",
+            "Le Lay",
+            "Notre-Dame-de-la-Gorge"
+          ]
+        },
+        {
+          "id": "combloux",
+          "label": "Combloux",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Centre",
+            "La Cry"
+          ]
+        },
+        {
+          "id": "cordon",
+          "label": "Cordon",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Village",
+            "Domaine familial"
+          ]
+        },
+        {
+          "id": "praz-sur-arly",
+          "label": "Praz-sur-Arly",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Centre"
+          ]
+        },
+        {
+          "id": "domancy",
+          "label": "Domancy",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "sallanches",
+          "label": "Sallanches",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "passy",
+          "label": "Passy",
+          "type": "village",
+          "country": "FR",
+          "sectors": [
+            "Plaine-Joux",
+            "Plateau d’Assy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vallee-de-chamonix-mont-blanc",
+      "label": "Vallée de Chamonix – Mont-Blanc",
+      "destinations": [
+        {
+          "id": "chamonix-mont-blanc",
+          "label": "Chamonix-Mont-Blanc",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Centre",
+            "Les Praz",
+            "Les Bossons",
+            "Brévent",
+            "Flégère",
+            "Planards",
+            "Aiguille du Midi"
+          ]
+        },
+        {
+          "id": "argentiere",
+          "label": "Argentière",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Les Grands Montets"
+          ]
+        },
+        {
+          "id": "le-tour",
+          "label": "Le Tour",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Balme"
+          ]
+        },
+        {
+          "id": "montroc",
+          "label": "Montroc",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "vallorcine",
+          "label": "Vallorcine",
+          "type": "village",
+          "country": "FR",
+          "sectors": [
+            "Le Buet"
+          ]
+        },
+        {
+          "id": "les-houches",
+          "label": "Les Houches",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Bellevue",
+            "Le Prarion"
+          ]
+        },
+        {
+          "id": "servoz",
+          "label": "Servoz",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        }
+      ]
+    },
+    {
+      "id": "vallee-verte-hirmentaz-et-les-haberes",
+      "label": "Vallée Verte – Hirmentaz et Les Habères",
+      "destinations": [
+        {
+          "id": "habere-poche",
+          "label": "Habère-Poche",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Les Habères"
+          ]
+        },
+        {
+          "id": "bellevaux",
+          "label": "Bellevaux",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Hirmentaz"
+          ]
+        },
+        {
+          "id": "habere-lullin",
+          "label": "Habère-Lullin",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "villard",
+          "label": "Villard",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "boege",
+          "label": "Boëge",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "burdignin",
+          "label": "Burdignin",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "saxel",
+          "label": "Saxel",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "saint-andre-de-boege",
+          "label": "Saint-André-de-Boëge",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        }
+      ]
+    },
+    {
+      "id": "les-brasses",
+      "label": "Les Brasses",
+      "destinations": [
+        {
+          "id": "saint-jeoire",
+          "label": "Saint-Jeoire",
+          "type": "village",
+          "country": "FR",
+          "sectors": [
+            "Les Brasses"
+          ]
+        },
+        {
+          "id": "onnion",
+          "label": "Onnion",
+          "type": "village",
+          "country": "FR",
+          "sectors": [
+            "Les Brasses"
+          ]
+        },
+        {
+          "id": "bogeve",
+          "label": "Bogève",
+          "type": "village",
+          "country": "FR",
+          "sectors": [
+            "Massif des Brasses"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vallee-de-larve-faucigny-et-bornes",
+      "label": "Vallée de l’Arve – Faucigny et Bornes",
+      "destinations": [
+        {
+          "id": "mont-saxonnex",
+          "label": "Mont-Saxonnex",
+          "type": "station",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "le-reposoir",
+          "label": "Le Reposoir",
+          "type": "station",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "romme-sur-cluses",
+          "label": "Romme-sur-Cluses",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Nancy-sur-Cluses"
+          ]
+        },
+        {
+          "id": "brison",
+          "label": "Brison",
+          "type": "nordique",
+          "country": "FR",
+          "sectors": [
+            "Plateau de Solaison"
+          ]
+        },
+        {
+          "id": "praz-de-lys",
+          "label": "Praz-de-Lys",
+          "type": "station",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "sommand",
+          "label": "Sommand",
+          "type": "station",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "bonneville",
+          "label": "Bonneville",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "cluses",
+          "label": "Cluses",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "scionzier",
+          "label": "Scionzier",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "marnaz",
+          "label": "Marnaz",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "marignier",
+          "label": "Marignier",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "thyez",
+          "label": "Thyez",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "magland",
+          "label": "Magland",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "saint-pierre-en-faucigny",
+          "label": "Saint-Pierre-en-Faucigny",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "ayse",
+          "label": "Ayse",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "vougy",
+          "label": "Vougy",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "taninges",
+          "label": "Taninges",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "mieussy",
+          "label": "Mieussy",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        }
+      ]
+    },
+    {
+      "id": "chablais-lac-leman-et-montagnes-devian",
+      "label": "Chablais – Lac Léman et montagnes d’Évian",
+      "destinations": [
+        {
+          "id": "bernex",
+          "label": "Bernex",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Dent d’Oche"
+          ]
+        },
+        {
+          "id": "thollon-les-memises",
+          "label": "Thollon-les-Mémises",
+          "type": "station",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "evian-les-bains",
+          "label": "Évian-les-Bains",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "publier",
+          "label": "Publier",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "lugrin",
+          "label": "Lugrin",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "meillerie",
+          "label": "Meillerie",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "saint-paul-en-chablais",
+          "label": "Saint-Paul-en-Chablais",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "vinzier",
+          "label": "Vinzier",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "lullin",
+          "label": "Lullin",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "vailly",
+          "label": "Vailly",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "thonon-les-bains",
+          "label": "Thonon-les-Bains",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        }
+      ]
+    },
+    {
+      "id": "annecy-semnoz-glieres-et-bauges",
+      "label": "Annecy – Semnoz, Glières et Bauges",
+      "destinations": [
+        {
+          "id": "le-semnoz",
+          "label": "Le Semnoz",
+          "type": "station",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "plateau-des-glieres",
+          "label": "Plateau des Glières",
+          "type": "nordique",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "montmin",
+          "label": "Montmin",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Col de la Forclaz"
+          ]
+        },
+        {
+          "id": "annecy",
+          "label": "Annecy",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "annecy-le-vieux",
+          "label": "Annecy-le-Vieux",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "sevrier",
+          "label": "Sevrier",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "saint-jorioz",
+          "label": "Saint-Jorioz",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "doussard",
+          "label": "Doussard",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "talloires-montmin",
+          "label": "Talloires-Montmin",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "menthon-saint-bernard",
+          "label": "Menthon-Saint-Bernard",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "veyrier-du-lac",
+          "label": "Veyrier-du-Lac",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "faverges-seythenex",
+          "label": "Faverges-Seythenex",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        },
+        {
+          "id": "thorens-glieres",
+          "label": "Thorens-Glières",
+          "type": "village",
+          "country": "FR",
+          "sectors": []
+        }
+      ]
+    },
+    {
+      "id": "savoie-transferts-longue-distance",
+      "label": "Savoie – Transferts longue distance",
+      "destinations": [
+        {
+          "id": "les-arcs",
+          "label": "Les Arcs",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Les Arcs 1600",
+            "Les Arcs 1800",
+            "Les Arcs 1950",
+            "Les Arcs 2000"
+          ],
+          "area": "Paradiski – Tarentaise"
+        },
+        {
+          "id": "bourg-saint-maurice",
+          "label": "Bourg-Saint-Maurice",
+          "type": "village",
+          "country": "FR",
+          "sectors": [],
+          "area": "Paradiski – Tarentaise"
+        },
+        {
+          "id": "peisey-vallandry",
+          "label": "Peisey-Vallandry",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Paradiski – Tarentaise"
+        },
+        {
+          "id": "la-plagne",
+          "label": "La Plagne",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Plagne Centre",
+            "Plagne Bellecôte",
+            "Belle Plagne",
+            "Plagne 1800",
+            "Plagne Villages",
+            "Plagne Soleil",
+            "Aime 2000",
+            "Montchavin",
+            "Les Coches",
+            "Champagny-en-Vanoise"
+          ],
+          "area": "Paradiski – Tarentaise"
+        },
+        {
+          "id": "courchevel",
+          "label": "Courchevel",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Courchevel 1850",
+            "Courchevel 1650 – Moriond",
+            "Courchevel 1550 – Village",
+            "Le Praz"
+          ],
+          "area": "Les 3 Vallées"
+        },
+        {
+          "id": "meribel",
+          "label": "Méribel",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Centre",
+            "Mottaret"
+          ],
+          "area": "Les 3 Vallées"
+        },
+        {
+          "id": "val-thorens",
+          "label": "Val Thorens",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Les 3 Vallées"
+        },
+        {
+          "id": "les-menuires",
+          "label": "Les Menuires",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Les 3 Vallées"
+        },
+        {
+          "id": "saint-martin-de-belleville",
+          "label": "Saint-Martin-de-Belleville",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Les 3 Vallées"
+        },
+        {
+          "id": "orelle",
+          "label": "Orelle",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Les 3 Vallées"
+        },
+        {
+          "id": "brides-les-bains",
+          "label": "Brides-les-Bains",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Les 3 Vallées"
+        },
+        {
+          "id": "tignes",
+          "label": "Tignes",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Tignes Le Lac",
+            "Tignes Val Claret",
+            "Tignes 1800",
+            "Tignes Les Brévières"
+          ],
+          "area": "Tignes – Val d’Isère"
+        },
+        {
+          "id": "val-disere",
+          "label": "Val d’Isère",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Centre",
+            "La Daille",
+            "Le Fornet"
+          ],
+          "area": "Tignes – Val d’Isère"
+        },
+        {
+          "id": "les-saisies",
+          "label": "Les Saisies",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Espace Diamant – Val d’Arly et Beaufortain"
+        },
+        {
+          "id": "crest-voland",
+          "label": "Crest-Voland",
+          "type": "station",
+          "country": "FR",
+          "sectors": [
+            "Cohennoz"
+          ],
+          "area": "Espace Diamant – Val d’Arly et Beaufortain"
+        },
+        {
+          "id": "notre-dame-de-bellecombe",
+          "label": "Notre-Dame-de-Bellecombe",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Espace Diamant – Val d’Arly et Beaufortain"
+        },
+        {
+          "id": "flumet",
+          "label": "Flumet",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Espace Diamant – Val d’Arly et Beaufortain"
+        },
+        {
+          "id": "hauteluce",
+          "label": "Hauteluce",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Espace Diamant – Val d’Arly et Beaufortain"
+        },
+        {
+          "id": "areches-beaufort",
+          "label": "Arêches-Beaufort",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Autres destinations de Savoie"
+        },
+        {
+          "id": "la-rosiere",
+          "label": "La Rosière",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Autres destinations de Savoie"
+        },
+        {
+          "id": "sainte-foy-tarentaise",
+          "label": "Sainte-Foy-Tarentaise",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Autres destinations de Savoie"
+        },
+        {
+          "id": "valmorel",
+          "label": "Valmorel",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Autres destinations de Savoie"
+        },
+        {
+          "id": "la-toussuire",
+          "label": "La Toussuire",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Autres destinations de Savoie"
+        },
+        {
+          "id": "le-corbier",
+          "label": "Le Corbier",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Autres destinations de Savoie"
+        },
+        {
+          "id": "saint-sorlin-darves",
+          "label": "Saint-Sorlin-d’Arves",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Autres destinations de Savoie"
+        },
+        {
+          "id": "valloire",
+          "label": "Valloire",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Autres destinations de Savoie"
+        },
+        {
+          "id": "valmeinier",
+          "label": "Valmeinier",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Autres destinations de Savoie"
+        },
+        {
+          "id": "aussois",
+          "label": "Aussois",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Autres destinations de Savoie"
+        },
+        {
+          "id": "la-norma",
+          "label": "La Norma",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Autres destinations de Savoie"
+        },
+        {
+          "id": "valfrejus",
+          "label": "Valfréjus",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Autres destinations de Savoie"
+        },
+        {
+          "id": "la-feclaz",
+          "label": "La Féclaz",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Autres destinations de Savoie"
+        },
+        {
+          "id": "le-revard",
+          "label": "Le Revard",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Autres destinations de Savoie"
+        },
+        {
+          "id": "la-giettaz",
+          "label": "La Giettaz",
+          "type": "station",
+          "country": "FR",
+          "sectors": [],
+          "area": "Autres destinations de Savoie"
+        }
+      ]
+    }
+  ]
+}

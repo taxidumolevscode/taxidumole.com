@@ -71,6 +71,9 @@ export default function SkiTransfertPage() {
                 ))}
               </div>
               <div className="mt-10 flex flex-col md:flex-row gap-4">
+                <Link href="/options-json" className="inline-flex justify-center app-primary">
+                  Voir toutes les destinations
+                </Link>
                 <Link href="/tarifs" className="inline-flex justify-center app-secondary">
                   Voir Les Tarifs
                 </Link>

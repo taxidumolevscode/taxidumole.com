@@ -4,6 +4,7 @@ const pages = [
   "/",
   "/type-de-trajet",
   "/ski-transfert",
+  "/options-json",
   "/tarifs",
   "/reserver-en-ligne",
   "/services",
