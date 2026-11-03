@@ -6,7 +6,7 @@ import { Phone } from 'lucide-react';
 import { siteMeta } from '../components/siteData';
 
 export default function ReserverEnLignePage() {
-  return <><SeoHead title="Réserver en ligne" description="Préparez votre trajet avec Taxi du Môle : départ, destination, horaires et coordonnées, puis demande par email."/><AppShell>
+  return <><SeoHead title="Réserver en ligne" description="Envoyez votre demande de réservation à Taxi du Môle : départ, destination, horaires et coordonnées, directement depuis le site."/><AppShell>
     <PageIntro eyebrow="VOTRE PROCHAIN TRAJET" title="On vous emmène où ?">Quelques détails pour préparer votre prise en charge. Le trajet et le prix sont confirmés personnellement.</PageIntro>
     <div className="app-reservation-grid"><section className="app-form-card"><BookingForm/></section><div><JourneyPanel/><a className="app-help" href={siteMeta.phoneHref}><Phone size={20}/><span>Un départ imminent ?<strong>{siteMeta.phoneDisplay}</strong></span></a></div></div>
   </AppShell></>;

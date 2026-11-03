@@ -194,12 +194,25 @@ button {
 .app-home-shell .app-call { border-color: #ffffff30; }
 .app-home-shell .app-call svg { color: #ffb600; }
 .app-brand-hero { background: #080808; color: #f4f1e9; padding: 28px 28px 30px; text-align: center; overflow: hidden; }
-.app-brand-hero h1 { max-width: 1240px; margin: 0 auto 26px; font-size: clamp(28px, 4.5vw, 68px); font-weight: 800; line-height: 1.08; letter-spacing: -.04em; text-transform: uppercase; text-wrap: balance; }
+.app-brand-hero h1 { max-width: 1240px; margin: 0 auto 26px; font-size: clamp(28px, 4.5vw, 68px); font-weight: 800; line-height: 1.08; letter-spacing: -.04em; text-wrap: balance; }
 .app-brand-hero-image { display: block; width: min(100%, 1240px); height: auto; max-height: 64vh; object-fit: contain; margin: 0 auto; }
 .app-hero-scroll { display: inline-flex; align-items: center; justify-content: center; gap: 18px; margin-top: 24px; font-size: 12px; color: #d4d4d4; }
 .app-hero-scroll span { color: #ffb600; font-size: 22px; }
 .app-hero-scroll:hover { color: #fff; }
+.app-primary:disabled, .app-back:disabled { cursor: default; transform: none; opacity: .7; }
+.app-booking-success { display: block; background: #f0faf3; color: #245638; border: 1px solid #b8d8c1; }
+.app-booking-error { display: block; border: 1px solid #d9b9b9; color: #7b2929; }
+.app-booking-success a, .app-booking-error a { text-decoration: underline; white-space: nowrap; }
 #preparer-trajet { scroll-margin-top: 24px; }
+
+/* Capitalize headings and large editorial text without changing body copy. */
+h1, h2, h3, h4, h5, h6,
+.app-journey-copy > p {
+  text-transform: capitalize !important;
+}
+h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
+  text-transform: inherit !important;
+}
 @media (max-width: 767px) {
   .app-brand-hero { padding: 24px 18px 28px; }
   .app-brand-hero h1 { font-size: clamp(25px, 6.7vw, 42px); margin-bottom: 25px; }
