@@ -6,7 +6,7 @@ import { siteMeta } from "../components/siteData";
 
 const skiBlocks = [
   ["Genève Aéroport", "Accueil organisé à l'arrivée, suivi horaire, bagages et matériel de ski signalés avant départ.", "https://res.cloudinary.com/do6qoswp/image/upload/v1787416825/ChatGPT_Image_22_ao%C3%BBt_2026_%C3%A0_18_39_34_yz93cy.png"],
-  ["Genève Gare Cornavin", "Transfert direct vers station ou hébergement, pratique pour les arrivées TGV et Léman Express.", "https://res.cloudinary.com/do6qoswp/image/upload/v1789301905/ChatGPT_Image_13_sept._2026_%C3%A0_14_17_53_hu0qo3.png"],
+  ["Genève Gare Cornavin", "Transfert direct vers station ou hébergement, pratique pour les arrivées TGV et Léman Express.", "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Gen%C3%A8ve-Cornavin_railway_station_%282026%29.jpg/1280px-Gen%C3%A8ve-Cornavin_railway_station_%282026%29.jpg"],
   ["Stations Haute-Savoie", "Chamonix, Flaine, Samoëns, Megève, La Clusaz, Le Grand-Bornand et autres destinations sur demande.", "https://res.cloudinary.com/do6qoswp/image/upload/v1788711307/ChatGPT_Image_6_sept._2026_%C3%A0_18_14_45_pzk497.png"],
   ["Bagages & Skis", "Skis, snowboards, sacs volumineux et équipement enfant sont pris en compte à la réservation.", "https://res.cloudinary.com/do6qoswp/image/upload/v1789316299/ChatGPT_Image_13_sept._2026_%C3%A0_18_17_32_kdmmaa.png"],
 ];
@@ -42,7 +42,7 @@ export default function SkiTransfertPage() {
                   <div className="ski-card-image">
                     <img
                       src={skiImageUrl(image, 768)}
-                      srcSet={[480, 768, 1280].map((width) => `${skiImageUrl(image, width)} ${width}w`).join(", ")}
+                      srcSet={image.startsWith("https://res.cloudinary.com/") ? [480, 768, 1280].map((width) => `${skiImageUrl(image, width)} ${width}w`).join(", ") : undefined}
                       sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1352px) calc((100vw - 80px) / 2), 636px"
                       alt=""
                       width={1280}
