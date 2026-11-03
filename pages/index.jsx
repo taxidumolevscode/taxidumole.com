@@ -45,7 +45,7 @@ export default function Home() {
           <h1 id="home-brand-title">Services de transport de personnes en Haute-Savoie</h1>
           <img
             className="app-brand-hero-image"
-            src="https://res.cloudinary.com/do6qoswp/image/upload/v1783513373/573b7860-8a91-49da-bb69-b20827e60703_jquqtz.png"
+            src="https://res.cloudinary.com/do6qoswp/image/upload/v1793717031/135FC8F0-606B-43E6-A899-C5E85A9A386E_xt279a.png"
             alt="Taxi du Môle : notre chauffeur et le logo de la marque"
             fetchPriority="high"
           />
