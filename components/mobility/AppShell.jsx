@@ -17,7 +17,7 @@ export default function AppShell({ children, hero }) {
     <header className="app-header">
       <Link href="/" className="app-brand" aria-label="Taxi du Môle — accueil">
         <img src={siteMeta.logoImage} alt="" />
-        <span>Taxi du Môle<small>VOTRE CHAUFFEUR EN HAUTE-SAVOIE</small></span>
+        <span className="app-brand-tagline">Votre chauffeur en Haute-Savoie</span>
       </Link>
       <nav className="app-desktop-nav" aria-label="Navigation principale">
         {tabs.map(([href, label]) => <Link key={href} href={href} aria-current={pathname === href ? 'page' : undefined}>{label}</Link>)}

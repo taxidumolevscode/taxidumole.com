@@ -36,7 +36,8 @@ export default function FareEstimate({ values }) {
       {result && <div className="app-notice" style={{ display: 'block' }}>
         <strong>Estimation : {euros(result.totalCents)} TTC</strong>
         <p>{(result.meters / 1000).toLocaleString('fr-FR', { maximumFractionDigits: 1 })} km · environ {Math.ceil(result.seconds / 60)} min · tarif {result.category} ({euros(result.perKmCents)}/km)</p>
-        <p className="app-field-note">Grille 2026 · prise en charge {euros(result.baseCents)} · supplément passagers {euros(result.passengerCents)}. Hypothèse : retour à vide. Hors approche, attente, péages et bagages particuliers. Estimation indicative, non contractuelle : le taximètre et les conditions réelles peuvent modifier le montant, notamment lors d’un changement de période tarifaire. Le tarif neige n’est pas appliqué automatiquement.</p>
+        <p className="app-field-note">Grille tarifaire réglementaire 2026 · prise en charge {euros(result.baseCents)}.</p>
+        {result.passengerCents > 0 && <p className="app-field-note">Supplément passagers inclus : {euros(result.passengerCents)}.</p>}
       </div>}
     </div>
     {error && <p className="app-notice app-booking-error" role="alert">{error}</p>}

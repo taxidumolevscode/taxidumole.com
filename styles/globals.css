@@ -47,6 +47,13 @@ button {
 .app-brand { display: flex; gap: 10px; align-items: center; flex-shrink: 0; font-size: 20px; font-weight: 750; letter-spacing: -.6px; }
 .app-brand img { width: 68px; height: 52px; object-fit: contain; }
 .app-brand small { display: block; font-size: 8px; letter-spacing: 1.6px; color: #737373; font-weight: 600; margin-top: 6px; }
+.app-brand .app-brand-tagline { max-width: 220px; text-align: center; font-size: 12px; line-height: 1.5; font-weight: 600; letter-spacing: 0; text-transform: uppercase; color: #525252; text-wrap: balance; }
+@media (max-width: 767px) {
+  .app-header .app-brand { min-width: 0; flex: 1; }
+  .app-brand .app-brand-tagline { flex: 1; max-width: none; font-size: 11px; }
+  .app-brand img { flex-shrink: 0; }
+  .app-header .app-call { flex-shrink: 0; }
+}
 .app-desktop-nav { display: flex; gap: 6px; align-items: center; }
 .app-desktop-nav a { font-size: 13px; padding: 11px 15px; border-radius: 9px; font-weight: 600; color: #525252; white-space: nowrap; }
 .app-desktop-nav a[aria-current], .app-desktop-nav a:hover { background: #f0f0f0; color: #171717; }
