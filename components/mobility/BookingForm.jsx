@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/router';
 import { ArrowRight, ArrowLeft, MapPin, Navigation, CalendarDays, Users, Check, Send } from 'lucide-react';
 import { siteMeta } from '../siteData';
+import FareEstimate from './FareEstimate';
 
 const suggestions = ['Bonneville', 'Aéroport de Genève', 'Gare de Genève Cornavin', 'Gare de Cluses', 'Gare d’Annemasse', 'Annecy', 'Chamonix', 'Flaine', 'Megève', 'Samoëns', 'La Clusaz'];
 
@@ -75,6 +76,7 @@ export default function BookingForm({ compact = false }) {
         <div className="app-field-grid">{field('date', 'Date', CalendarDays, { type: 'date', min: new Intl.DateTimeFormat('fr-CA', { timeZone: 'Europe/Paris' }).format(new Date()) })}{field('heure', 'Heure', null, { type: 'time' })}</div>
         <label className="app-field"><span>Passagers</span><div><Users size={18}/><select name="passagers" value={values.passagers} onChange={update}>{[1,2,3,4,5,6,7,8].map((n) => <option key={n} value={n}>{n} {n === 1 ? 'passager' : 'passagers'}</option>)}</select></div></label>
         <p className="app-field-note">Véhicule et capacité confirmés selon votre demande.</p>
+        <FareEstimate values={values}/>
       </>}
       {step === 1 && <>
         <h2>Comment vous joindre ?</h2><p className="app-muted">Nous vous recontactons pour confirmer le trajet et son prix.</p>
