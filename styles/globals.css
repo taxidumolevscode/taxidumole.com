@@ -187,18 +187,21 @@ button {
 .app-text-link { text-decoration: underline !important; text-decoration-color: var(--app-gold) !important; text-underline-offset: 5px; text-decoration-thickness: 2px !important; }
 
 /* Homepage brand introduction, followed by the booking interface. */
-.app-home-shell .app-header { background: #080808; color: #f4f1e9; border-color: #ffffff14; }
-.app-home-shell .app-brand small { color: #b0b0b0; }
-.app-home-shell .app-desktop-nav a { color: #c8c8c8; }
-.app-home-shell .app-desktop-nav a[aria-current], .app-home-shell .app-desktop-nav a:hover { background: #ffffff12; color: #fff; }
-.app-home-shell .app-call { border-color: #ffffff30; }
+.app-home-shell .app-header { background: #fff; color: #171717; border-color: #e5e5e5; }
+.app-home-shell .app-brand small { color: #666; }
+.app-home-shell .app-desktop-nav a { color: #525252; }
+.app-home-shell .app-desktop-nav a[aria-current], .app-home-shell .app-desktop-nav a:hover { background: #ffb600; color: #171717; }
+.app-home-shell .app-call { border-color: #d4d4d4; }
 .app-home-shell .app-call svg { color: #ffb600; }
-.app-brand-hero { background: #080808; color: #f4f1e9; padding: 28px 28px 30px; text-align: center; overflow: hidden; }
-.app-brand-hero h1 { max-width: 1240px; margin: 0 auto 26px; font-size: clamp(28px, 4.5vw, 68px); font-weight: 800; line-height: 1.08; letter-spacing: -.04em; text-wrap: balance; }
+.app-brand-hero { position: relative; isolation: isolate; background: #f0f0f0; color: #171717; padding: 44px 28px 30px; text-align: center; overflow: hidden; border-bottom: 1px solid #dedede; }
+.app-brand-hero::before { content: ""; position: absolute; inset: 0; z-index: -2; background: url("https://res.cloudinary.com/do6qoswp/image/upload/v1793815073/Transport_urbain_futuriste_en_esquisse_en4tgp.png") center center / cover no-repeat; }
+.app-brand-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(255, 255, 255, .72); pointer-events: none; }
+.app-brand-hero h1 { max-width: 1100px; margin: 0 auto 26px; font-size: 56px; font-weight: 800; line-height: 1.12; letter-spacing: 0; text-wrap: balance; }
 .app-brand-hero-image { display: block; width: min(100%, 1240px); height: auto; max-height: 64vh; object-fit: contain; margin: 0 auto; }
-.app-hero-scroll { display: inline-flex; align-items: center; justify-content: center; gap: 18px; margin-top: 24px; font-size: 12px; color: #d4d4d4; }
-.app-hero-scroll span { color: #ffb600; font-size: 22px; }
-.app-hero-scroll:hover { color: #fff; }
+.app-hero-scroll { display: inline-flex; align-items: center; justify-content: center; gap: 18px; min-height: 48px; padding: 0 20px; border-bottom: 3px solid #ffb600; margin-top: 24px; font-size: 14px; font-weight: 700; color: #171717; }
+.app-hero-scroll span { color: #171717; font-size: 22px; }
+.app-hero-scroll:hover { background: #ffb600; color: #171717; }
+.app-hero-scroll:focus-visible { outline: 2px solid #171717; outline-offset: 5px; }
 .app-primary:disabled, .app-back:disabled { cursor: default; transform: none; opacity: .7; }
 .app-booking-success { display: block; background: #f0faf3; color: #245638; border: 1px solid #b8d8c1; }
 .app-booking-error { display: block; border: 1px solid #d9b9b9; color: #7b2929; }
@@ -215,7 +218,10 @@ h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
 }
 @media (max-width: 767px) {
   .app-brand-hero { padding: 24px 18px 28px; }
-  .app-brand-hero h1 { font-size: clamp(25px, 6.7vw, 42px); margin-bottom: 25px; }
+  .app-brand-hero h1 { font-size: 28px; margin-bottom: 25px; }
   .app-brand-hero-image { max-height: none; width: 100%; }
   .app-hero-scroll { margin-top: 22px; }
+}
+@media (min-width: 768px) and (max-width: 1100px) {
+  .app-brand-hero h1 { font-size: 42px; }
 }

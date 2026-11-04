@@ -46,6 +46,12 @@ Ne pas suggérer un calcul routier automatique lorsqu'aucun service ne le fourni
 
 ## Valeurs visuelles
 
+L'accueil prolonge cette palette claire : en-tete blanc, introduction sur gris
+perle `#f0f0f0`, titre noir et lien vers la reservation souligne en `#ffb600`.
+La mascotte conserve ses couleurs originales ; aucun filtre d'inversion.
+Une esquisse de transport urbain habille le fond de cette introduction, avec
+un voile blanc a 72 % pour conserver le contraste du titre et du lien.
+
 La classe `.mobility-app` définit les variables `--app-gold`, `--app-ink` et
 `--app-muted`. Le jaune souligne les liens et quelques détails ; les boutons
 principaux restent sombres avec du texte blanc. Les surfaces sont blanches sur
